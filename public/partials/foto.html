@@ -1,0 +1,63 @@
+<div class="page-header text-center">
+    <h1>{{foto.titulo}}</h1>
+</div>
+
+<p ng-show="mensagem.length" class="alert alert-info">{{mensagem}}</p>
+
+<!-- usa formulario.$submitted para validar apenas quando for submetido -->
+
+<form novalidate name="formulario" class="row" ng-submit="submeter()">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label>Título</label>
+            <input name="titulo" class="form-control" 
+                ng-model="foto.titulo"
+                ng-maxlength="20" required>
+            <span ng-show="formulario.$submitted && formulario.titulo.$error.required" class="form-control alert-danger">
+                Título obrigatório
+            </span>
+            <span ng-show="formulario.$submitted && formulario.titulo.$error.maxlength" class="form-control alert-danger">
+                No máximo 20 caracteres!
+            </span>
+                
+        </div>
+        <div class="form-group">
+            <label>URL</label>
+            <input name="url" class="form-control" 
+                ng-model="foto.url"
+                required>
+            <span ng-show="formulario.$submitted && formulario.url.$error.required" class="form-control alert-danger">
+               URL obrigatória
+            </span>
+        </div>
+        <div class="form-group">
+            <label>Descrição</label>
+            <textarea name="descricao" class="form-control" 
+                ng-model="foto.descricao">
+                {{foto.descricao}}
+            </textarea>
+            
+        </div>
+        <div class="form-group">
+            <label>Grupo</label>
+            <select name="grupo" 
+                    ng-model="foto.grupo" ng-controller="GrupoController"
+                    ng-options="grupo._id as grupo.nome for grupo in grupos" 
+                    class="form-control" required>
+                <option value="">Escolha um grupo</option>
+            </select>
+            <span ng-show="formulario.$submitted && formulario.grupo.$error.required" class="form-control alert-danger">
+                Grupo obrigatório
+            </span>
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-disable="formulario.$invalid">
+            Salvar
+        </button>
+         <a href="/" class="btn btn-primary">Voltar</a>
+        <hr>
+    </div>
+    <div class="col-md-6">
+        <my-picture url="{{foto.url}}"></my-picture>
+    </div>
+</form>

@@ -1,0 +1,57 @@
+ <div class="jumbotron">
+    <div class="container">
+        <h1 class="text-center">
+            Alurapic
+        </h1>
+    </div>
+</div><!-- fim jumbotron -->
+
+<p ng-show="mensagem.length" class="alert alert-info">
+    {{mensagem}}
+</p>
+<div class="row">
+    <div class="col-md-12">
+        <form>
+            <select name="grupo" 
+                ng-model="grupo._id" ng-controller="GrupoController"
+                ng-options="grupo._id as (grupo.nome | uppercase) for grupo in grupos" 
+                class="form-control" ng-change="listarPorGrupo(grupo)">
+            </select>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <a href="/fotos/new" class="btn btn-primary" type="button">
+                        Nova foto
+                    </a>
+                </span>
+                <input class="form-control" ng-model="filtro" placeholder="filtrar pelo título da foto" ng-model-options="{ debounce: 500 }">
+            </div>
+        </form>
+        <p class="alert text-center" ng-click="filtro=''">
+            <ng-pluralize count="(fotos | filter:filtro).length" 
+                when="{
+                    '0': 'Nenhuma foto de {{fotos.length}} encontrada',
+                    '1': '1 foto de {{fotos.length}} encontrada', 
+                    'other': '{{(fotos | filter:filtro).length}} fotos de {{fotos.length}} encontradas'
+                }">
+            </ng-pluralize>
+        </p>
+
+    </div><!-- fim col-md-12 -->
+</div><!-- fim row -->
+<div class="row">
+    <my-panel ng-repeat="foto in fotos | filter: filtro" 
+        title="{{foto.titulo}}" class="col-md-2 my-panel-repeat">
+        
+        <my-picture url="{{::foto.url}}"></my-picture>
+        <a class="btn btn-primary btn-block" 
+            href="/fotos/edit/{{::foto._id}}">
+            Editar
+        </a>
+
+        <button class="btn btn-danger btn-block" 
+            ng-click="remover(foto)">
+            Remover
+        </button>
+
+    </my-panel>
+</div>  <!-- fim row -->  
