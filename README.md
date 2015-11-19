@@ -1,3 +1,0 @@
-# Alurapic
-
-Projeto em andamento
