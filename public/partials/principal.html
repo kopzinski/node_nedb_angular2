@@ -3,6 +3,10 @@
         <h1 class="text-center">Alurapic</h1>
     </div>
 
+    <p ng-show="mensagem.length" class="alert alert-info">
+        {{mensagem}}
+    </p>
+
     <div class="row">
         <div class="col-md-12">
         <form>
@@ -21,6 +25,9 @@
 
         <meu-painel class="painel-animado" ng-repeat="foto in fotos | filter: filtro" titulo="{{foto.titulo}}">
             <minha-foto url="{{foto.url}}" titulo="{{foto.titulo}}"></minha-foto>
+            <a class="btn btn-primary btn-block" href="">Editar</a>
+            <button class="btn btn-danger btn-block" ng-click="remover(foto)">Remover</button>
+
         </meu-painel>
 
 
