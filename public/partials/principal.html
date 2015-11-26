@@ -1,6 +1,6 @@
 
     <div class="jumbotron">
-        <h1 class="text-center">Alurapic</h1>
+        <h1 class="text-center">Kop Pic</h1>
     </div>
 
     <p ng-show="mensagem.length" class="alert alert-info">
@@ -25,7 +25,7 @@
 
         <meu-painel class="painel-animado" ng-repeat="foto in fotos | filter: filtro" titulo="{{foto.titulo}}">
             <minha-foto url="{{foto.url}}" titulo="{{foto.titulo}}"></minha-foto>
-            <a class="btn btn-primary btn-block" href="">Editar</a>
+            <a class="btn btn-primary btn-block" href="/fotos/edit/{{foto._id}}">Editar</a>
             <button class="btn btn-danger btn-block" ng-click="remover(foto)">Remover</button>
 
         </meu-painel>
