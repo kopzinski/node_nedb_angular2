@@ -26,7 +26,8 @@
         <meu-painel class="painel-animado" ng-repeat="foto in fotos | filter: filtro" titulo="{{foto.titulo}}">
             <minha-foto url="{{foto.url}}" titulo="{{foto.titulo}}"></minha-foto>
             <a class="btn btn-primary btn-block" href="/fotos/edit/{{foto._id}}">Editar</a>
-            <button class="btn btn-danger btn-block" ng-click="remover(foto)">Remover</button>
+            <meu-botao-perigo nome="Remover" acao="remover(foto)"></meu-botao-perigo>
+            
 
         </meu-painel>
 

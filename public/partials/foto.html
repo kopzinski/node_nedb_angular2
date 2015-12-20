@@ -38,10 +38,23 @@
             </textarea>
         </div>
 
+        <div class="form-group">
+            <label>Grupo</label>
+            <select name="grupo" class="form-control" required
+                ng-controller="GruposController"
+                ng-model="foto.grupo"
+                ng-options="grupo._id as (grupo.nome | uppercase ) for grupo in grupos">
+                <option value="">Escolha um grupo</option>
+            </select>
+            <span ng-show="formulario.$submitted && formulario.grupo.$error.required" class="form-control alert-danger">
+                Grupo obrigatório
+            </span>
+        </div>
+
         <button type="submit" class="btn btn-primary" ng-disabled="formulario.$invalid">
             Salvar
         </button>
-         <a href="/" class="btn btn-primary">Voltar</a>
+         <a href="/" meu-focus focado="focado" class="btn btn-primary">Voltar</a>
         <hr>
     </div>
     <div class="col-md-6">
