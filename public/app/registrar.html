@@ -4,8 +4,9 @@
     <h3 class="text-center">Registrar Refeição</h3>
 
     <div class="thumbnail text-center">
-        <input type="file" name="filefield">
-
+        <div class="text-center">
+            <input type="file" name="filefield" >
+        </div>
         <figure >
             <img *ngIf="refeicao" width="200px" src="{{refeicao.foto}}" alt="{{refeicao.atleta}} em {{refeicao.data}}" />
 
