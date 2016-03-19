@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br" ng-app="alurapic">
-    <head>
-        <base href="/">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Kop Pic</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/efeitos.css">
-        <script src="js/lib/angular.min.js"></script>
-        <script src="js/lib/angular-animate.min.js"></script>
-        <script src="js/lib/angular-route.min.js"></script>
-        <script src="js/lib/angular-resource.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/controllers/fotos-controller.js"></script>
-        <script src="js/controllers/foto-controller.js"></script>
-        <script src="js/controllers/grupos-controller.js"></script>
-        <script src="js/directives/minhas-diretivas.js"></script>
-        <script src="js/services/meus-servicos.js"></script>
-        
-    </head>
-    <body >
-        <div class="container">
-            <ng-view></ng-view>
-        </div><!-- fim container -->
-    </body>
+<html>
+  <head>
+    <title>Angular 2 Todos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills (from CDN), in this exact order -->
+    <script src="js/es6-shim.min.js"></script>
+    <script src="js/system-polyfills.js"></script>
+    <script src="js/shims_for_IE.js"></script>
+    <script src="js/system.js"></script>
+    <script src="js/typescript.js"></script>
+    <script src="js/angular2-polyfills.js"></script>
+    <script src="js/Rx.js"></script>
+    <script src="js/angular2.dev.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        transpiler: 'typescript',
+        typescriptOptions: { emitDecoratorMetadata: true },
+        packages: {'app': {defaultExtension: 'ts'}}
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+
+  <!-- ja consegui fazer o Angular2 submeter um form pro express e salvar o arquivo-->
+  <form method="POST" enctype="multipart/form-data" action="/">
+    <input type="text" name="textfield"><br />
+    <input type="file" name="filefield"><br />
+    <input type="submit">
+  </form>
+
+
+
+    <todo-app class="container" style="display: block">Loading...</todo-app>
+  </body>
 </html>
