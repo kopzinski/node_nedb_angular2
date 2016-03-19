@@ -1,13 +1,17 @@
-<div>
-    <div>
-        <label>Atleta: </label>{{atleta.nome}}
-    </div>
-    <div>
-        <label>Data: </label>{{refeicao.data}}
-    </div>
+<main>
+    <h3 class="text-center">Avaliar Refeição</h3>
 
-    <img src="/uploads/3e9d4bf12a5f00ea0cafa81810add29e.png">
-    <br />
-    <button (click)="aprovar()">Aprovar</button>
-    <button (click)="reprovar()">Reprovar</button>
-</div>
+    <div class="thumbnail text-center">
+        <figure >
+            <img width="200px" src="{{refeicao.foto}}" alt="{{refeicao.atleta}} em {{refeicao.data}}" />
+
+            <div>
+                <h4>{{refeicao.atleta}}</h4>
+                <p>#arroz #feijao #carne #suco</p>
+            </div>
+        </figure>
+        <p>{{refeicao.data}}</p>
+        <a  (click)="aprovar()" class="btn btn-primary">Aprovar</a>
+        <a  (click)="reprovar()" class="btn btn-primary">Reprovar</a>
+    </div>
+</main>

@@ -7,7 +7,7 @@ var routes = require('./app/routes');
 var app = express();
 
 app.use(multer({ dest: './uploads/fotos'}));
-app.use('public', express.static('public'));
+app.use( express.static('./public'));
 app.use('/uploads', express.static('uploads'));
 
 //Rota exclusive para salvar as fotos recebidas...
@@ -41,8 +41,9 @@ app.route('/v1/tags/:tagId')
     .put(tag.atualiza);
 
 // habilitando HTML5MODE
-app.all('/*', function(req, res) {
-    res.send('public/index.html');
+app.all('\\/*', function(req, res) {
+    console.log('a');
+    res.sendfile('index.html');
 });
 
 app.listen(3000, function(app) {

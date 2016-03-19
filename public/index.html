@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <base href="/">
     <title>KopNutri App</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/styles.css"><!--own styles...-->
@@ -16,13 +18,18 @@
     <script src="js/angular2-polyfills.js"></script>
     <script src="js/Rx.js"></script>
     <script src="js/angular2.dev.js"></script>
+    <script src="js/router.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script>
       System.config({
         transpiler: 'typescript',
         typescriptOptions: { emitDecoratorMetadata: true },
-        packages: {'app': {defaultExtension: 'ts'}}
+        packages: {
+            'app': {
+                defaultExtension: 'ts'
+            }
+        }
       });
       System.import('app/main')
             .then(null, console.error.bind(console));

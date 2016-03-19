@@ -1,13 +1,26 @@
+<main>
+    <!--<form method="POST" enctype="multipart/form-data" action="/">-->
 
-<form method="POST" enctype="multipart/form-data" action="/">
-    <input type="text" name="textfield"><br />
-    <input type="file" name="filefield"><br />
-    <input type="submit">
-</form>
+    <h3 class="text-center">Registrar Refeição</h3>
+
+    <div class="thumbnail text-center">
+        <input type="file" name="filefield">
+
+        <figure >
+            <img *ngIf="refeicao" width="200px" src="{{refeicao.foto}}" alt="{{refeicao.atleta}} em {{refeicao.data}}" />
 
 
-<!--<h2>KopNutri App</h2>-->
-<!--<span>{{remaining}} of {{todos.length}} remaining</span>-->
-<!--[ <a (click)="archive()">archive</a> ]-->
-<!--<todo-list [todos]="todos"></todo-list>-->
-<!--<todo-form (newTask)="addTask($event)"></todo-form>-->
+        </figure>
+        <p>{{refeicao.data}}</p>
+        <a (click)="registrar()" class="btn btn-primary">Registrar</a>
+    </div>
+    <!--</form>-->
+</main>
+
+
+
+<!--<form method="POST" enctype="multipart/form-data" action="/">-->
+    <!--<input type="text" name="textfield"><br />-->
+    <!--<input type="file" name="filefield"><br />-->
+    <!--<input type="submit">-->
+<!--</form>-->
