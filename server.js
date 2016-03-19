@@ -10,30 +10,18 @@ app.use(multer({ dest: './uploads/fotos'}));
 app.use('public', express.static('public'));
 app.use('/uploads', express.static('uploads'));
 
-//app.get('/', function(req, res) {
-//    res.send('index.html');
-//});
-
-app.post('/v1/photos', function(req, res){
+//Rota exclusive para salvar as fotos recebidas...
+app.post('/v1/photos', function(req, res) {
     //console.log(req.body) // form fields
     //console.log(req.files) // form files
     res.send(req.files.filefield.name);
     //res.status(204).end()
 });
 
-app.route('/v1/tags')
-    .post(tag.adiciona)
-    .get(tag.lista);
-
-app.route('/v1/tags/:tagId')
-    .delete(tag.remove)
-    .get(tag.busca)
-    .put(tag.atualiza);
-
+//Rodas para inserir refeicao nova e listar todas refeicoes
 app.route('/v1/refeicoes')
     .post(refeicao.adiciona)
     .get(refeicao.lista);
-
 app.route('/v1/refeicoes/:refeicaoId')
     .delete(refeicao.remove)
     .get(refeicao.busca)
@@ -41,6 +29,17 @@ app.route('/v1/refeicoes/:refeicaoId')
 
 //app.get('/v1/grupos', api.listaGrupos)
 //app.get('/v1/fotos/grupo/:grupoId', api.listaPorGrupo);
+
+//Menos importantes por enquanto..
+app.route('/v1/tags')
+    .post(tag.adiciona)
+    .get(tag.lista);
+app.route('/v1/tags/:tagId')
+    .delete(tag.remove)
+    .get(tag.busca)
+    .put(tag.atualiza);
+
+
 
 // habilitando HTML5MODE
 app.all('/*', function(req, res) {
