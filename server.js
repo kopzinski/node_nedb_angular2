@@ -15,6 +15,7 @@ app.post('/v1/photos', function(req, res) {
     //console.log(req.body) // form fields
     //console.log(req.files) // form files
     res.send(req.files.filefield.name);
+    res.bad
     //res.status(204).end()
 });
 
@@ -38,8 +39,6 @@ app.route('/v1/tags/:tagId')
     .delete(tag.remove)
     .get(tag.busca)
     .put(tag.atualiza);
-
-
 
 // habilitando HTML5MODE
 app.all('/*', function(req, res) {

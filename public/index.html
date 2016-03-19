@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Angular 2 Todos</title>
+    <title>KopNutri App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/styles.css"><!--own styles...-->
+
     <!-- 1. Load libraries -->
     <!-- IE required polyfills (from CDN), in this exact order -->
     <script src="js/es6-shim.min.js"></script>
@@ -15,6 +16,7 @@
     <script src="js/angular2-polyfills.js"></script>
     <script src="js/Rx.js"></script>
     <script src="js/angular2.dev.js"></script>
+
     <!-- 2. Configure SystemJS -->
     <script>
       System.config({
@@ -28,17 +30,6 @@
   </head>
   <!-- 3. Display the application -->
   <body>
-
-  <!-- ja consegui fazer o Angular2 submeter um form pro express e salvar o arquivo-->
-  <!-- MAS preciso testar com um form relamente dentro do angular.. este esta fora no "app"...-->
-  <form method="POST" enctype="multipart/form-data" action="/">
-    <input type="text" name="textfield"><br />
-    <input type="file" name="filefield"><br />
-    <input type="submit">
-  </form>
-
-
-
-    <todo-app class="container" style="display: block">Loading...</todo-app>
+    <kop-app class="container" style="display: block">Loading...</kop-app>
   </body>
 </html>

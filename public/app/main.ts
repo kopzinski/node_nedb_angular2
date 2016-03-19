@@ -1,3 +1,3 @@
 import {bootstrap} from 'angular2/platform/browser';
-import {TodoApp}   from './todo_app';
+import {KopApp}   from './kop_app';
 bootstrap(TodoApp);
