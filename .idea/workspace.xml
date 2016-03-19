@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b991282-b8b4-4a83-a2a3-6e046f95cdd3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/efeitos.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/controllers/foto-controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/controllers/fotos-controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/controllers/grupos-controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/directives/meu-painel.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/directives/minhas-diretivas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/angular-animate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/angular-cookies.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/angular-resource.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/angular-route.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/lib/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/services/meus-servicos.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/partials/foto.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/partials/principal.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/api/index.js" afterPath="$PROJECT_DIR$/app/api/tagDAO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes/index.js" afterPath="$PROJECT_DIR$/app/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.js" afterPath="$PROJECT_DIR$/config/database.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/express.js" afterPath="$PROJECT_DIR$/config/express.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.db" afterPath="$PROJECT_DIR$/data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="node_nedb_angular2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,21 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refeicaoDAO.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="refeicaoDAO.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/api/refeicaoDAO.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.388889">
-              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/database.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28526148">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.9051724">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -157,10 +124,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-72" />
-    <option name="y" value="-766" />
+    <option name="x" value="-116" />
+    <option name="y" value="-1022" />
     <option name="width" value="1312" />
-    <option name="height" value="749" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -345,7 +312,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-72" y="-766" width="1312" height="749" extended-state="0" />
+    <frame x="-116" y="-1022" width="1312" height="984" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23547637" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -509,14 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/refeicaoDAO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.388889">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/nedb/lib/datastore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64659274">
@@ -535,8 +494,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28526148">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.02377179">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/refeicaoDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9051724">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
