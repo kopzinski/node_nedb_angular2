@@ -1,13 +1,13 @@
 var db = require('../../config/database');
+var tipos = require('./tipos');
 
 var tagDAO = {}
 
 tagDAO.adiciona = function(req, res) {
     console.log('tagDAO.adiciona');
-    console.log('req.body');
-    console.log(req.body);
-    console.log('req.params');
-    console.log(req.params);
+
+    req.body.type = tipos.tag;
+
     db.insert(req.body, function(err, newDoc) {
         if(err) return console.log(err);
         console.log('Adicionado com sucesso: ' + newDoc._id);
@@ -45,17 +45,6 @@ tagDAO.lista = function(req, res) {
     });
 };
 
-tagDAO.listaPorGrupo = function(req, res) {
-    console.log('tagDAO.listaPorGrupo');
-
-    var grupoId = parseInt(req.params.grupoId);
-    db.find({grupo: grupoId}, function(err, doc) {
-        if (err) return console.log(err);
-        res.json(doc);
-    });
-
-};
-
 tagDAO.remove = function(req, res) {
     console.log('tagDAO.remove');
 
@@ -65,25 +54,6 @@ tagDAO.remove = function(req, res) {
         if(numRemoved) res.status(200).end();
         res.status(500).end();
     });
-};
-
-tagDAO.listaGrupos = function(req, res) {
-
-    res.json([
-        {
-            _id: 1, 
-            nome: 'esporte'
-        }, 
-        { 
-            _id: 2, 
-            nome: 'lugares', 
-        }, 
-        { 
-            _id: 3, 
-            nome: 'animais'
-        }
-    ]);
-        
 };
 
 

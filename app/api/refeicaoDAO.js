@@ -1,16 +1,20 @@
 var db = require('../../config/database');
+var tipos = require('./tipos');
 
 var refeicaoDAO = {}
+
+
 
 refeicaoDAO.adiciona = function(req, res) {
     console.log('refeicaoDAO.adiciona');
     console.log('req.body');
     console.log(req.body);
-    console.log('req.params');
-    console.log(req.params);
+    req.body.type = tipos.refeicao;
+
     db.insert(req.body, function(err, newDoc) {
         if(err) return console.log(err);
         console.log('Adicionado com sucesso: ' + newDoc._id);
+        console.log(newDoc);
         res.json(newDoc._id);
     });  
 };
@@ -38,23 +42,23 @@ refeicaoDAO.atualiza = function(req, res) {
 refeicaoDAO.lista = function(req, res) {
     console.log('refeicaoDAO.lista');
 
-    db.find({}).sort({titulo: 1}).exec(function(err, doc) {
+    db.find({type : tipos.refeicao}).sort({titulo: 1}).exec(function(err, doc) {
         console.log(doc);
         if (err) return console.log(err);
         res.json(doc);
     });
 };
-
-refeicaoDAO.listaPorGrupo = function(req, res) {
-    console.log('refeicaoDAO.listaPorGrupo');
-
-    var grupoId = parseInt(req.params.grupoId);
-    db.find({grupo: grupoId}, function(err, doc) {
-        if (err) return console.log(err);
-        res.json(doc);
-    });
-
-};
+//
+//refeicaoDAO.listaPorGrupo = function(req, res) {
+//    console.log('refeicaoDAO.listaPorGrupo');
+//
+//    var grupoId = parseInt(req.params.grupoId);
+//    db.find({grupo: grupoId}, function(err, doc) {
+//        if (err) return console.log(err);
+//        res.json(doc);
+//    });
+//
+//};
 
 refeicaoDAO.remove = function(req, res) {
     console.log('refeicaoDAO.remove');
@@ -65,25 +69,6 @@ refeicaoDAO.remove = function(req, res) {
         if(numRemoved) res.status(200).end();
         res.status(500).end();
     });
-};
-
-refeicaoDAO.listaGrupos = function(req, res) {
-
-    res.json([
-        {
-            _id: 1, 
-            nome: 'esporte'
-        }, 
-        { 
-            _id: 2, 
-            nome: 'lugares', 
-        }, 
-        { 
-            _id: 3, 
-            nome: 'animais'
-        }
-    ]);
-        
 };
 
 

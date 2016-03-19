@@ -1,4 +1,12 @@
-{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"NAO_AVALIADO","_id":"GemspAGPm1ox89DZ"}
-{"alimento":"arroz","quantidade":"200","_id":"actgIYMRrUPvHtZa"}
-{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"APROVADO","_id":"GemspAGPm1ox89DZ"}
+{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"NAO_AVALIADO","cacete":"aaaa","_id":"AANTPFqwu0t51mpw"}
+{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"NAO_AVALIADO","_id":"BVfQcqm723sjijCe"}
 {"status":"APROVADO","_id":"GemspAGPm1ox89DZ"}
+{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"sNAO_AVALIADO","type":"TAG","_id":"JcBWExMpv960JH8l"}
+{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"NAO_AVALIADO","type":"TAG","_id":"QIAphnClMe3cFg2f"}
+{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"NAO_AVALIADO","type":"TAG","_id":"QcrwstMZ9Wh9y3VF"}
+{"alimento":"arroz","quantidade":"200","_id":"actgIYMRrUPvHtZa"}
+{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"NAO_AVALIADO","type":{"type":"Refeicao"},"_id":"b0XfPbFAY2pDocEn"}
+{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"NAO_AVALIADO","type":"TAG","_id":"bUeyPnRDIGtUexuQ"}
+{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"NAO_AVALIADO","type":"REFEICAO","_id":"bXmIznib3IRwoUXD"}
+{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"NAO_AVALIADO","type":"Refeicao","_id":"rDlyttJUBOfYEtTr"}
+{"nomeFoto":"f1a740b3bda514e03bc3abf2679b3c8f.png","status":"NAO_AVALIADO","type":"Refeicao","_id":"sdgeiIdLrVH4UFYA"}
