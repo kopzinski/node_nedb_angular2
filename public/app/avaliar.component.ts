@@ -5,6 +5,8 @@ import {Refeicao} from './refeicao';
 import {refeicaoMock} from './mock-refeicao';
 
 
+
+
 @Component({
     selector: 'avaliar-comp',
     templateUrl : 'app/avaliar.html',
@@ -19,6 +21,7 @@ export class AvaliarComponent {
     list: Refeicao[] = [];
     refeicao : Refeicao;
 
+
     getRefeicao() {
         this.refeicao = refeicaoMock;
 
@@ -29,11 +32,14 @@ export class AvaliarComponent {
     }
 
     aprovar(){
+
         console.log('Aprovar');
     }
 
     reprovar(){
         console.log('Reprovar');
     }
+
+
 
 }

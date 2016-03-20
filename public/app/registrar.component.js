@@ -5,27 +5,43 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('angular2/core');
+var http_1 = require('angular2/http');
 //import {TodoList} from './todo_list';
 //import {TodoForm} from './todo_form';
 var mock_refeicao_1 = require('./mock-refeicao');
+var refeicao_service_1 = require('./refeicao.service');
 var RegistrarComponent = (function () {
-    function RegistrarComponent() {
+    function RegistrarComponent(_refeicaoService) {
+        this._refeicaoService = _refeicaoService;
         this.title = 'Registrar Refeição';
         this.list = [];
     }
     RegistrarComponent.prototype.getRefeicao = function () {
         this.refeicao = mock_refeicao_1.refeicaoMock;
     };
-    RegistrarComponent.prototype.ngOnInit = function () {
-        this.getRefeicao();
-    };
+    RegistrarComponent.prototype.ngOnInit = function () { this.getRefeicao(); this.getRefeicoes(); };
     RegistrarComponent.prototype.registrar = function () {
         console.log('Registrar');
+        this.addHero('Paulo');
+    };
+    RegistrarComponent.prototype.getRefeicoes = function () {
+        var _this = this;
+        this._refeicaoService.getRefeicoes()
+            .subscribe(function (heroes) { return _this.list = heroes; }, function (error) { return _this.errorMessage = error; });
+    };
+    RegistrarComponent.prototype.addHero = function (name) {
+        var _this = this;
+        if (!name) {
+            return;
+        }
+        this._refeicaoService.addRefeicao(name)
+            .subscribe(function (hero) { return _this.list.push(hero); }, function (error) { return _this.errorMessage = error; });
     };
     RegistrarComponent = __decorate([
         core_1.Component({
             selector: 'registrar-comp',
-            templateUrl: 'app/registrar.html'
+            templateUrl: 'app/registrar.html',
+            providers: [http_1.HTTP_PROVIDERS, refeicao_service_1.RefeicaoService]
         })
     ], RegistrarComponent);
     return RegistrarComponent;
