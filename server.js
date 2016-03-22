@@ -1,5 +1,6 @@
 var express = require('express');
 var  multer  = require('multer');
+var bodyParser = require('body-parser');
 var refeicao = require('./app/api/refeicaoDAO');
 var tag = require('./app/api/tagDAO');
 var path = require('path');
@@ -7,7 +8,13 @@ var routes = require('./app/routes');
 var app = express();
 
 app.use(multer({ dest: './uploads/fotos'}));
+
+// parse application/json
+app.use(bodyParser.json());
+
+
 app.use( express.static('./public'));
+
 app.use('/uploads', express.static('uploads'));
 
 //Rota exclusive para salvar as fotos recebidas...

@@ -25,16 +25,17 @@ var RegistrarComponent = (function () {
         this.addHero('Paulo');
     };
     RegistrarComponent.prototype.getRefeicoes = function () {
-        var _this = this;
-        this._refeicaoService.getRefeicoes()
-            .subscribe(function (heroes) { return _this.list = heroes; }, function (error) { return _this.errorMessage = error; });
+        //this._refeicaoService.getRefeicoes()
+        //    .subscribe(
+        //        heroes => this.list = heroes,
+        //        error =>  this.errorMessage = <any>error);
     };
     RegistrarComponent.prototype.addHero = function (name) {
         var _this = this;
         if (!name) {
             return;
         }
-        this._refeicaoService.addRefeicao(name)
+        this._refeicaoService.addRefeicao('aaa')
             .subscribe(function (hero) { return _this.list.push(hero); }, function (error) { return _this.errorMessage = error; });
     };
     RegistrarComponent = __decorate([

@@ -37,14 +37,14 @@ export class RegistrarComponent implements OnInit{
     }
 
     getRefeicoes() {
-        this._refeicaoService.getRefeicoes()
-            .subscribe(
-                heroes => this.list = heroes,
-                error =>  this.errorMessage = <any>error);
+        //this._refeicaoService.getRefeicoes()
+        //    .subscribe(
+        //        heroes => this.list = heroes,
+        //        error =>  this.errorMessage = <any>error);
     }
     addHero (name: string) {
         if (!name) {return;}
-        this._refeicaoService.addRefeicao(name)
+        this._refeicaoService.addRefeicao('aaa')
             .subscribe(
                 hero  => this.list.push(hero),
                 error =>  this.errorMessage = <any>error);
