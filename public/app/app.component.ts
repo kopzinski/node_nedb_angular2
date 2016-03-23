@@ -17,16 +17,16 @@ import {refeicaoMock} from './mock-refeicao';
 
 @RouteConfig([
   {
-    path: '/avaliar',
+    path: '/',
     name: 'Avaliar',
     component: AvaliarComponent,
-
+    useAsDefault: true
   },
   {
     path: '/registrar',
     name: 'Registrar',
     component: RegistrarComponent,
-    useAsDefault: true
+
   }
 ])
 

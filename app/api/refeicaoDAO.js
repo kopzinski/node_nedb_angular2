@@ -23,13 +23,14 @@ refeicaoDAO.busca = function(req, res) {
     console.warn('refeicaoDAO.busca');
    db.findOne({_id: req.params.refeicaoId }, function(err, doc) {
         if (err) return console.log(err);
+        console.log(doc);
         res.json(doc);
     });
 };
 
 refeicaoDAO.atualiza = function(req, res) {
-    console.trace('refeicaoDAO.atualiza');
-    
+    console.log('refeicaoDAO.atualiza');
+    console.log(req.body);
     db.update({_id : req.params.refeicaoId }, req.body, function(err, numReplaced) {
         if (err) return console.log(err);
         if(numReplaced) res.status(200).end();

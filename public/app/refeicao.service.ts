@@ -11,10 +11,10 @@ export class RefeicaoService {
     private _heroesUrl = 'v1/refeicoes';  // URL to web api
 
     getRefeicoes () {
-        //return this.http.get(this._heroesUrl)
-        //    .map(res => <Refeicao[]> res.json().data)
-        //    .do(data => console.log(data)) // eyeball results in the console
-        //    .catch(this.handleError);
+        return this.http.get(this._heroesUrl+'/fplqg1AI2Kn67hth')
+            //.map(res => <Refeicao[]> res.json().data)
+            //.do(data => console.log(data)) // eyeball results in the console
+            //.catch(this.handleError);
     }
     private handleError (error: Response) {
         // in a real world app, we may send the error to some remote logging infrastructure
@@ -23,36 +23,18 @@ export class RefeicaoService {
         return Observable.throw(error.json().error || 'Server error');
     }
 
-    addRefeicao (name: string) : Observable<Refeicao>  {
-        //
-        //let body = JSON.stringify({ name });
-        //let headers = new Headers({ 'Content-Type': 'application/json' });
-        //let options = new RequestOptions({ headers: headers });
-        //return this.http.post(this._heroesUrl, body, options)
-        //    .toPromise()
-        //    .then(res => <Refeicao> res.json().data)
-        //    .catch(this.handleError);
-
-
-        //let body = JSON.stringify({
-        //    foto: 'uploads/fotos/eb9d16435b53b9c4910b1c8b4f266d1a.png',
-        //    atleta: 'Paulo Mello',
-        //    data : '10/06/2016 16:00',
-        //    status : 'APROVADO'
-        //});
-
-        let body = {
-            foto: 'uploads/fotos/eb9d16435b53b9c4910b1c8b4f266d1a.png',
-            atleta: 'Paulo Mello',
-            data : '10/06/2016 16:00',
-            status : 'APROVADO'
-        };
-
+    addRefeicao (refeicao: Refeicao) : Observable<Refeicao>  {
+        let body = JSON.stringify(refeicao);
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = { headers: headers};
-
-        console.log(options);
-        return this.http.post(this._heroesUrl, JSON.stringify(body), options);
-
+        return this.http.post(this._heroesUrl, body, options);
     }
+
+    saveRefeicao (refeicao: Refeicao) : Observable<Refeicao>  {
+        let body = JSON.stringify(refeicao);
+        let headers = new Headers({ 'Content-Type': 'application/json' });
+        let options = { headers: headers};
+        return this.http.put(this._heroesUrl+'/'+refeicao._id, body, options);
+    }
+
 }

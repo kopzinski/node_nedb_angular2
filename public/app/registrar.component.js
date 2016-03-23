@@ -6,8 +6,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('angular2/core');
 var http_1 = require('angular2/http');
-//import {TodoList} from './todo_list';
-//import {TodoForm} from './todo_form';
 var mock_refeicao_1 = require('./mock-refeicao');
 var refeicao_service_1 = require('./refeicao.service');
 var RegistrarComponent = (function () {
@@ -15,34 +13,67 @@ var RegistrarComponent = (function () {
         this._refeicaoService = _refeicaoService;
         this.title = 'Registrar Refeição';
         this.list = [];
-    }
-    RegistrarComponent.prototype.getRefeicao = function () {
         this.refeicao = mock_refeicao_1.refeicaoMock;
+        this.getRefeicao();
+        this.filesToUpload = [];
+    }
+    RegistrarComponent.prototype.upload = function () {
+        this.makeFileRequest("/v1/photos", [], this.filesToUpload, this.refeicao).then(function (result) {
+            console.log('Kop! sucesso');
+            console.log(result);
+        }, function (error) {
+            console.log('Kop! erro');
+            //console.error(error);
+        });
     };
-    RegistrarComponent.prototype.ngOnInit = function () { this.getRefeicao(); this.getRefeicoes(); };
-    RegistrarComponent.prototype.registrar = function () {
-        console.log('Registrar');
-        this.addHero('Paulo');
+    RegistrarComponent.prototype.fileChangeEvent = function (fileInput) {
+        this.filesToUpload = fileInput.target.files;
+    };
+    RegistrarComponent.prototype.makeFileRequest = function (url, params, files, ref) {
+        console.log(this.refeicao);
+        return new Promise(function (resolve, reject) {
+            var formData = new FormData();
+            var xhr = new XMLHttpRequest();
+            for (var i = 0; i < files.length; i++) {
+                formData.append("uploads", files[i], files[i].name);
+            }
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        ref.foto = 'uploads/fotos/' + xhr.response;
+                    }
+                    else {
+                        reject(xhr.response);
+                    }
+                }
+            };
+            xhr.open("POST", url, true);
+            xhr.send(formData);
+        });
+    };
+    RegistrarComponent.prototype.getRefeicao = function () {
+        this.refeicao;
+    };
+    RegistrarComponent.prototype.ngOnInit = function () {
+        this.getRefeicao();
+        this.getRefeicoes();
     };
     RegistrarComponent.prototype.getRefeicoes = function () {
-        //this._refeicaoService.getRefeicoes()
-        //    .subscribe(
-        //        heroes => this.list = heroes,
-        //        error =>  this.errorMessage = <any>error);
-    };
-    RegistrarComponent.prototype.addHero = function (name) {
         var _this = this;
-        if (!name) {
-            return;
-        }
-        this._refeicaoService.addRefeicao('aaa')
+        this._refeicaoService.getRefeicoes()
+            .subscribe(function (refeicoes) { return _this.list = refeicoes; }, function (error) { return _this.errorMessage = error; });
+    };
+    RegistrarComponent.prototype.registrar = function () {
+        var _this = this;
+        this._refeicaoService.addRefeicao(this.refeicao)
             .subscribe(function (hero) { return _this.list.push(hero); }, function (error) { return _this.errorMessage = error; });
     };
     RegistrarComponent = __decorate([
         core_1.Component({
             selector: 'registrar-comp',
             templateUrl: 'app/registrar.html',
-            providers: [http_1.HTTP_PROVIDERS, refeicao_service_1.RefeicaoService]
+            providers: [http_1.HTTP_PROVIDERS, refeicao_service_1.RefeicaoService],
+            directives: []
         })
     ], RegistrarComponent);
     return RegistrarComponent;

@@ -19,10 +19,10 @@ app.use('/uploads', express.static('uploads'));
 
 //Rota exclusive para salvar as fotos recebidas...
 app.post('/v1/photos', function(req, res) {
-    //console.log(req.body) // form fields
-    //console.log(req.files) // form files
-    res.send(req.files.filefield.name);
-    res.bad
+    //console.log(req.body); // form fields
+    //console.log(req.files); // form files
+    res.send(req.files.uploads.name);
+    //res.send(req.files.filefield.name);
     //res.status(204).end()
 });
 

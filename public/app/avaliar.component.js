@@ -5,31 +5,52 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('angular2/core');
-//import {TodoList} from './todo_list';
-//import {TodoForm} from './todo_form';
+var http_1 = require('angular2/http');
 var mock_refeicao_1 = require('./mock-refeicao');
+var refeicao_service_1 = require('./refeicao.service');
 var AvaliarComponent = (function () {
-    function AvaliarComponent() {
+    function AvaliarComponent(_refeicaoService) {
+        this._refeicaoService = _refeicaoService;
         this.title = 'Avaliar Refeição';
         this.list = [];
+        this.refeicao = mock_refeicao_1.refeicaoMock;
+        this.getRefeicao();
     }
     AvaliarComponent.prototype.getRefeicao = function () {
-        this.refeicao = mock_refeicao_1.refeicaoMock;
+        this.refeicao;
     };
     AvaliarComponent.prototype.ngOnInit = function () {
         this.getRefeicao();
+        this.getRefeicoes();
+    };
+    AvaliarComponent.prototype.getRefeicoes = function () {
+        var _this = this;
+        this._refeicaoService.getRefeicoes()
+            .subscribe(function (data) { return _this.populaRefeicao(data._body); }, function (error) { return _this.errorMessage = error; });
+        console.log(this.list);
+    };
+    AvaliarComponent.prototype.populaRefeicao = function (input) {
+        this.refeicao = JSON.parse(input);
     };
     AvaliarComponent.prototype.aprovar = function () {
-        console.log('Aprovar');
+        this.refeicao.status = 'APROVADO';
+        this.salvar();
     };
     AvaliarComponent.prototype.reprovar = function () {
-        console.log('Reprovar');
+        this.refeicao.status = 'REPROVADO';
+        this.salvar();
+    };
+    AvaliarComponent.prototype.salvar = function () {
+        var _this = this;
+        this._refeicaoService.saveRefeicao(this.refeicao)
+            .subscribe(function (hero) { return _this.list.push(hero); }, function (error) { return _this.errorMessage = error; });
     };
     AvaliarComponent = __decorate([
         core_1.Component({
             selector: 'avaliar-comp',
             templateUrl: 'app/avaliar.html',
-            styles: ['a { cursor: pointer; cursor: hand; }']
+            providers: [http_1.HTTP_PROVIDERS, refeicao_service_1.RefeicaoService],
+            directives: []
         })
     ], AvaliarComponent);
     return AvaliarComponent;

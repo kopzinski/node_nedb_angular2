@@ -41,15 +41,15 @@ var AppComponent = (function () {
         }),
         router_1.RouteConfig([
             {
-                path: '/avaliar',
+                path: '/',
                 name: 'Avaliar',
-                component: avaliar_component_1.AvaliarComponent
+                component: avaliar_component_1.AvaliarComponent,
+                useAsDefault: true
             },
             {
                 path: '/registrar',
                 name: 'Registrar',
-                component: registrar_component_1.RegistrarComponent,
-                useAsDefault: true
+                component: registrar_component_1.RegistrarComponent
             }
         ])
     ], AppComponent);

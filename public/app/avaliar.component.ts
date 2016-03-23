@@ -1,8 +1,9 @@
-import {Component} from 'angular2/core';
+import {Component, View, OnInit} from 'angular2/core';
+import {HTTP_PROVIDERS}    from 'angular2/http';
+import {bootstrap} from 'angular2/platform/browser';
 import {Refeicao} from './refeicao';
-//import {TodoList} from './todo_list';
-//import {TodoForm} from './todo_form';
 import {refeicaoMock} from './mock-refeicao';
+import {RefeicaoService} from './refeicao.service';
 
 
 
@@ -10,36 +11,58 @@ import {refeicaoMock} from './mock-refeicao';
 @Component({
     selector: 'avaliar-comp',
     templateUrl : 'app/avaliar.html',
-
-    styles:['a { cursor: pointer; cursor: hand; }']
-
+    providers : [HTTP_PROVIDERS,RefeicaoService ],
+    directives : []
 })
 
-export class AvaliarComponent {
+export class AvaliarComponent implements OnInit {
 
     title = 'Avaliar Refeição';
     list: Refeicao[] = [];
-    refeicao : Refeicao;
+    refeicao : Refeicao = refeicaoMock;
+    errorMessage: string ;
 
+    constructor (private _refeicaoService : RefeicaoService){
+        this.getRefeicao();
+    }
 
     getRefeicao() {
-        this.refeicao = refeicaoMock;
-
+        this.refeicao;
     }
 
     ngOnInit() {
         this.getRefeicao();
+        this.getRefeicoes();
+    }
+
+    getRefeicoes() {
+        this._refeicaoService.getRefeicoes()
+            .subscribe(
+                data => this.populaRefeicao( data._body),
+                error =>  this.errorMessage = <any>error);
+        console.log(this.list);
+    }
+
+    populaRefeicao(input) {
+        this.refeicao = JSON.parse(input);
     }
 
     aprovar(){
-
-        console.log('Aprovar');
+        this.refeicao.status = 'APROVADO';
+        this.salvar();
     }
 
     reprovar(){
-        console.log('Reprovar');
+        this.refeicao.status = 'REPROVADO';
+        this.salvar();
     }
 
+    salvar() {
+        this._refeicaoService.saveRefeicao(this.refeicao)
+            .subscribe(
+                hero  => this.list.push(hero),
+                error =>  this.errorMessage = <any>error);
+    }
 
 
 }

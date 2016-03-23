@@ -1,27 +1,16 @@
 <main>
-    <!--<form method="POST" enctype="multipart/form-data" action="/">-->
-
+    <span>{{errorMessage}}</span>
     <h3 class="text-center">Registrar Refeição</h3>
 
     <div class="thumbnail text-center">
-        <div class="text-center">
-            <input type="file" name="filefield" >
-        </div>
+        <input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
+        <button type="button" (click)="upload()">Upload</button>
+
         <figure >
-            <img *ngIf="refeicao" width="200px" src="{{refeicao.foto}}" alt="{{refeicao.atleta}} em {{refeicao.data}}" />
-
-
+            <img *ngIf="refeicao.foto" width="200px" src="{{refeicao.foto}}" alt="{{refeicao.atleta}} em {{refeicao.data}}" />
         </figure>
         <p>{{refeicao.data}}</p>
         <a (click)="registrar()" class="btn btn-primary">Registrar</a>
+
     </div>
-    <!--</form>-->
 </main>
-
-
-
-<!--<form method="POST" enctype="multipart/form-data" action="/">-->
-    <!--<input type="text" name="textfield"><br />-->
-    <!--<input type="file" name="filefield"><br />-->
-    <!--<input type="submit">-->
-<!--</form>-->
