@@ -6,6 +6,8 @@ node_modules/
 .dpl/
 .idea/
 
+uploads/fotos
+
 # Logs
 logs
 *.log
