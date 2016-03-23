@@ -34,21 +34,21 @@ import {refeicaoMock} from './mock-refeicao';
 export class AppComponent {
 
   title = 'KopNutri App';
-  list: Refeicao[] = [];
-  refeicao : Refeicao;
+  //list: Refeicao[] = [];
+  //refeicao : Refeicao;
 
   constructor(
       private _router: Router
    ) {
   }
 
-  getRefeicao() {
-    this.refeicao = refeicaoMock;
-
-  }
+  //getRefeicao() {
+  //  this.refeicao = refeicaoMock;
+  //
+  //}
 
   ngOnInit() {
-    this.getRefeicao();
+    //this.getRefeicao();
   }
 
 

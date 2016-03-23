@@ -8,19 +8,19 @@ var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
 var avaliar_component_1 = require('./avaliar.component');
 var registrar_component_1 = require('./registrar.component');
-//import {TodoForm} from './todo_form';
-var mock_refeicao_1 = require('./mock-refeicao');
 var AppComponent = (function () {
+    //list: Refeicao[] = [];
+    //refeicao : Refeicao;
     function AppComponent(_router) {
         this._router = _router;
         this.title = 'KopNutri App';
-        this.list = [];
     }
-    AppComponent.prototype.getRefeicao = function () {
-        this.refeicao = mock_refeicao_1.refeicaoMock;
-    };
+    //getRefeicao() {
+    //  this.refeicao = refeicaoMock;
+    //
+    //}
     AppComponent.prototype.ngOnInit = function () {
-        this.getRefeicao();
+        //this.getRefeicao();
     };
     AppComponent.prototype.goToAvaliar = function () {
         console.log('goToAvaliar()');

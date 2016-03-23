@@ -10,8 +10,15 @@ export class RefeicaoService {
 
     private _heroesUrl = 'v1/refeicoes';  // URL to web api
 
-    getRefeicoes () {
+    getRefeicao () {
         return this.http.get(this._heroesUrl+'/fplqg1AI2Kn67hth')
+        //.map(res => <Refeicao[]> res.json().data)
+        //.do(data => console.log(data)) // eyeball results in the console
+        //.catch(this.handleError);
+    }
+
+    getRefeicoes () {
+        return this.http.get(this._heroesUrl)
             //.map(res => <Refeicao[]> res.json().data)
             //.do(data => console.log(data)) // eyeball results in the console
             //.catch(this.handleError);
@@ -24,6 +31,9 @@ export class RefeicaoService {
     }
 
     addRefeicao (refeicao: Refeicao) : Observable<Refeicao>  {
+
+        refeicao.tags = ['#arroz', '#feijao' , '#salada'];
+
         let body = JSON.stringify(refeicao);
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = { headers: headers};

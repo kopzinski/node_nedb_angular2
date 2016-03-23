@@ -12,8 +12,14 @@ var RefeicaoService = (function () {
         this.http = http;
         this._heroesUrl = 'v1/refeicoes'; // URL to web api
     }
-    RefeicaoService.prototype.getRefeicoes = function () {
+    RefeicaoService.prototype.getRefeicao = function () {
         return this.http.get(this._heroesUrl + '/fplqg1AI2Kn67hth');
+        //.map(res => <Refeicao[]> res.json().data)
+        //.do(data => console.log(data)) // eyeball results in the console
+        //.catch(this.handleError);
+    };
+    RefeicaoService.prototype.getRefeicoes = function () {
+        return this.http.get(this._heroesUrl);
         //.map(res => <Refeicao[]> res.json().data)
         //.do(data => console.log(data)) // eyeball results in the console
         //.catch(this.handleError);
@@ -25,6 +31,7 @@ var RefeicaoService = (function () {
         return Observable_1.Observable.throw(error.json().error || 'Server error');
     };
     RefeicaoService.prototype.addRefeicao = function (refeicao) {
+        refeicao.tags = ['#arroz', '#feijao', '#salada'];
         var body = JSON.stringify(refeicao);
         var headers = new http_1.Headers({ 'Content-Type': 'application/json' });
         var options = { headers: headers };

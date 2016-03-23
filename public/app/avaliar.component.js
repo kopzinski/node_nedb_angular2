@@ -26,24 +26,28 @@ var AvaliarComponent = (function () {
     AvaliarComponent.prototype.getRefeicoes = function () {
         var _this = this;
         this._refeicaoService.getRefeicoes()
-            .subscribe(function (data) { return _this.populaRefeicao(data._body); }, function (error) { return _this.errorMessage = error; });
-        console.log(this.list);
+            .subscribe(function (data) { return _this.populaRefeicoes(data._body); }, function (error) { return _this.errorMessage = error; });
     };
-    AvaliarComponent.prototype.populaRefeicao = function (input) {
-        this.refeicao = JSON.parse(input);
+    AvaliarComponent.prototype.populaRefeicoes = function (input) {
+        this.list = JSON.parse(input);
     };
-    AvaliarComponent.prototype.aprovar = function () {
-        this.refeicao.status = 'APROVADO';
-        this.salvar();
+    AvaliarComponent.prototype.aprovar = function (refeicao) {
+        refeicao.status = 'APROVADO';
+        this.salvar(refeicao);
     };
-    AvaliarComponent.prototype.reprovar = function () {
-        this.refeicao.status = 'REPROVADO';
-        this.salvar();
+    AvaliarComponent.prototype.reprovar = function (refeicao) {
+        refeicao.status = 'REPROVADO';
+        this.salvar(refeicao);
     };
-    AvaliarComponent.prototype.salvar = function () {
+    AvaliarComponent.prototype.salvar = function (refeicao) {
         var _this = this;
+        this.refeicao = refeicao;
+        var index = this.list.indexOf(this.refeicao, 0);
+        if (index > -1) {
+            this.list.splice(index, 1);
+        }
         this._refeicaoService.saveRefeicao(this.refeicao)
-            .subscribe(function (hero) { return _this.list.push(hero); }, function (error) { return _this.errorMessage = error; });
+            .subscribe(function (data) { return console.log(data); }, function (error) { return _this.errorMessage = error; });
     };
     AvaliarComponent = __decorate([
         core_1.Component({

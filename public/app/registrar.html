@@ -10,6 +10,8 @@
             <img *ngIf="refeicao.foto" width="200px" src="{{refeicao.foto}}" alt="{{refeicao.atleta}} em {{refeicao.data}}" />
         </figure>
         <p>{{refeicao.data}}</p>
+        <!--<input [(ngModel)]="refeicao.tags" placeholder="arroz feijao batata..." />-->
+
         <a (click)="registrar()" class="btn btn-primary">Registrar</a>
 
     </div>

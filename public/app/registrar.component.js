@@ -57,6 +57,7 @@ var RegistrarComponent = (function () {
     RegistrarComponent.prototype.ngOnInit = function () {
         this.getRefeicao();
         this.getRefeicoes();
+        console.log(this.list);
     };
     RegistrarComponent.prototype.getRefeicoes = function () {
         var _this = this;
@@ -66,7 +67,11 @@ var RegistrarComponent = (function () {
     RegistrarComponent.prototype.registrar = function () {
         var _this = this;
         this._refeicaoService.addRefeicao(this.refeicao)
-            .subscribe(function (hero) { return _this.list.push(hero); }, function (error) { return _this.errorMessage = error; });
+            .subscribe(function (data) { return _this.populaRefeicoes(data._body); }, function (error) { return _this.errorMessage = error; });
+    };
+    RegistrarComponent.prototype.populaRefeicoes = function (input) {
+        this.list = JSON.parse(input);
+        //this.refeicao = JSON.parse(input);
     };
     RegistrarComponent = __decorate([
         core_1.Component({

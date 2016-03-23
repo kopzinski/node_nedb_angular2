@@ -5,9 +5,6 @@ import {Refeicao} from './refeicao';
 import {refeicaoMock} from './mock-refeicao';
 import {RefeicaoService} from './refeicao.service';
 
-
-
-
 @Component({
     selector: 'avaliar-comp',
     templateUrl : 'app/avaliar.html',
@@ -38,29 +35,35 @@ export class AvaliarComponent implements OnInit {
     getRefeicoes() {
         this._refeicaoService.getRefeicoes()
             .subscribe(
-                data => this.populaRefeicao( data._body),
+                data => this.populaRefeicoes( data._body),
                 error =>  this.errorMessage = <any>error);
-        console.log(this.list);
     }
 
-    populaRefeicao(input) {
-        this.refeicao = JSON.parse(input);
+    populaRefeicoes(input) {
+        this.list = JSON.parse(input);
     }
 
-    aprovar(){
-        this.refeicao.status = 'APROVADO';
-        this.salvar();
+    aprovar(refeicao : Refeicao){
+        refeicao.status = 'APROVADO';
+        this.salvar(refeicao);
     }
 
-    reprovar(){
-        this.refeicao.status = 'REPROVADO';
-        this.salvar();
+    reprovar(refeicao : Refeicao){
+        refeicao.status = 'REPROVADO';
+        this.salvar(refeicao);
     }
 
-    salvar() {
+    salvar(refeicao : Refeicao) {
+
+        this.refeicao = refeicao;
+        var index = this.list.indexOf(this.refeicao, 0);
+        if (index > -1) {
+            this.list.splice(index, 1);
+        }
+
         this._refeicaoService.saveRefeicao(this.refeicao)
             .subscribe(
-                hero  => this.list.push(hero),
+                data  => console.log(data),
                 error =>  this.errorMessage = <any>error);
     }
 

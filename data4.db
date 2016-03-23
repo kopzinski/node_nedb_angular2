@@ -48,7 +48,7 @@
 {"type":"REFEICAO","_id":"e2jRPZ9QWpo4HESK"}
 {"type":"REFEICAO","_id":"fEkIexCwFfCXqXHM"}
 {"type":"REFEICAO","_id":"fhq8GAYaGulxHM7k"}
-{"foto":"uploads/fotos/98f4a6f34679e3b4aa7839c4e8c59989.png","atleta":"Paulo Mello","data":"2016-03-23T20:11:00.504Z","status":"NAO_AVALIADO","type":"REFEICAO","_id":"fplqg1AI2Kn67hth"}
+{"foto":"uploads/fotos/98f4a6f34679e3b4aa7839c4e8c59989.png","atleta":"Paulo Mello","data":"2016-03-23T20:11:00.504Z","status":"REPROVADO","type":"REFEICAO","_id":"fplqg1AI2Kn67hth"}
 {"type":"REFEICAO","_id":"fvL68iODi9PYAaSc"}
 {"type":"REFEICAO","_id":"hpMoJHkoqppOUkGm"}
 {"type":"REFEICAO","_id":"jCwbSyCNL1ALhv4o"}
@@ -63,6 +63,4 @@
 {"type":"REFEICAO","_id":"uwCpkbygJ3KWgMQT"}
 {"foto":"uploads/fotos/51d362dab4855431adde19604ed22aa0.png","atleta":"Paulo Mello","data":"2016-03-23T15:56:43.526Z","status":"NAO_AVALIADO","type":"REFEICAO","_id":"vxgEEmbJ1KWUjM8x"}
 {"type":"REFEICAO","_id":"w8NSYW42KCoxvOrx"}
-{"foto":"uploads/fotos/98f4a6f34679e3b4aa7839c4e8c59989.png","atleta":"Paulo Mello","data":"2016-03-23T20:11:00.504Z","status":"NAO_AVALIADO","type":"REFEICAO","_id":"fplqg1AI2Kn67hth"}
-{"foto":"uploads/fotos/98f4a6f34679e3b4aa7839c4e8c59989.png","atleta":"Paulo Mello","data":"2016-03-23T20:11:00.504Z","status":"APROVADO","type":"REFEICAO","_id":"fplqg1AI2Kn67hth"}
-{"foto":"uploads/fotos/98f4a6f34679e3b4aa7839c4e8c59989.png","atleta":"Paulo Mello","data":"2016-03-23T20:11:00.504Z","status":"REPROVADO","type":"REFEICAO","_id":"fplqg1AI2Kn67hth"}
+{"foto":"uploads/fotos/51d362dab4855431adde19604ed22aa0.png","atleta":"Paulo Mello","data":"2016-03-23T15:56:43.526Z","status":"APROVADO","type":"REFEICAO","_id":"vxgEEmbJ1KWUjM8x"}

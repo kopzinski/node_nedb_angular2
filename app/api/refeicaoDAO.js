@@ -43,7 +43,7 @@ refeicaoDAO.atualiza = function(req, res) {
 refeicaoDAO.lista = function(req, res) {
     console.log('refeicaoDAO.lista');
 
-    db.find({type : tipos.refeicao}).sort({titulo: 1}).exec(function(err, doc) {
+    db.find({type : tipos.refeicao, status : 'NAO_AVALIADO'}).sort({titulo: 1}).exec(function(err, doc) {
         console.log(doc);
         if (err) return console.log(err);
         res.json(doc);

@@ -74,6 +74,7 @@ export class RegistrarComponent implements OnInit {
     ngOnInit() {
         this.getRefeicao();
         this.getRefeicoes();
+        console.log(this.list);
     }
 
 
@@ -87,9 +88,13 @@ export class RegistrarComponent implements OnInit {
 
         this._refeicaoService.addRefeicao(this.refeicao)
             .subscribe(
-                hero  => this.list.push(hero),
+                data  => this.populaRefeicoes(data._body),
                 error =>  this.errorMessage = <any>error);
     }
 
+    populaRefeicoes(input) {
+        this.list = JSON.parse(input);
+        //this.refeicao = JSON.parse(input);
+    }
 
 }
