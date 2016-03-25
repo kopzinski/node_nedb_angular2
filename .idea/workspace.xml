@@ -3,27 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6b991282-b8b4-4a83-a2a3-6e046f95cdd3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/refeicaoDAO.js" afterPath="$PROJECT_DIR$/app/api/refeicaoDAO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.js" afterPath="$PROJECT_DIR$/config/database.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data4.db" afterPath="$PROJECT_DIR$/data4.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/app.component.js" afterPath="$PROJECT_DIR$/public/app/app.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/app.component.js.map" afterPath="$PROJECT_DIR$/public/app/app.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/app.component.ts" afterPath="$PROJECT_DIR$/public/app/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/avaliar.component.js" afterPath="$PROJECT_DIR$/public/app/avaliar.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/avaliar.component.js.map" afterPath="$PROJECT_DIR$/public/app/avaliar.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/avaliar.component.ts" afterPath="$PROJECT_DIR$/public/app/avaliar.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/avaliar.html" afterPath="$PROJECT_DIR$/public/app/avaliar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/mock-refeicao.js" afterPath="$PROJECT_DIR$/public/app/mock-refeicao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/mock-refeicao.js.map" afterPath="$PROJECT_DIR$/public/app/mock-refeicao.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/mock-refeicao.ts" afterPath="$PROJECT_DIR$/public/app/mock-refeicao.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/refeicao.service.js" afterPath="$PROJECT_DIR$/public/app/refeicao.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/refeicao.service.js.map" afterPath="$PROJECT_DIR$/public/app/refeicao.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/refeicao.service.ts" afterPath="$PROJECT_DIR$/public/app/refeicao.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/refeicao.ts" afterPath="$PROJECT_DIR$/public/app/refeicao.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/registrar.component.js" afterPath="$PROJECT_DIR$/public/app/registrar.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/registrar.component.js.map" afterPath="$PROJECT_DIR$/public/app/registrar.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/registrar.component.ts" afterPath="$PROJECT_DIR$/public/app/registrar.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/registrar.html" afterPath="$PROJECT_DIR$/public/app/registrar.html" />
     </list>
     <ignored path="node_nedb_angular2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,8 +56,8 @@
       <file leaf-file-name="registrar.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/app/registrar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37209302">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.39534885">
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -796,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/registrar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37209302">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.39534885">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
