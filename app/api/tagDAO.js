@@ -38,7 +38,7 @@ tagDAO.atualiza = function(req, res) {
 tagDAO.lista = function(req, res) {
     console.log('tagDAO.lista');
 
-    db.find({}).sort({titulo: 1}).exec(function(err, doc) {
+    db.find({type : tipos.tag}).sort({texto: 1}).exec(function(err, doc) {
         console.log(doc);
         if (err) return console.log(err);
         res.json(doc);
