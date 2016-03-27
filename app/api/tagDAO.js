@@ -10,16 +10,26 @@ tagDAO.adiciona = function(req, res) {
     console.log('Recebido(body)');
     console.log(req.body);
 
+    if(req.body._id != undefined) {
+        db.update({_id : req.body._id }, req.body, function(err, numReplaced) {
+            if (err) return console.log(err);
+            if(numReplaced) res.status(200).end();
+            res.status(500).end();
+            console.log('Atualizado com sucesso: ' + req.body._id);
+            res.status(200).end();
+        });
+    } else {
+        req.body.type = tipos.tag;
 
-    req.body.type = tipos.tag;
+        db.insert(req.body, function(err, newDoc) {
+            if(err) return console.log(err);
+            console.log('Adicionado com sucesso: ' + newDoc._id);
+            console.log('Salvo:');
+            console.log(newDoc);
+            res.json(newDoc._id);
+        });
+    }
 
-    db.insert(req.body, function(err, newDoc) {
-        if(err) return console.log(err);
-        console.log('Adicionado com sucesso: ' + newDoc._id);
-        console.log('Salvo:');
-        console.log(newDoc);
-        res.json(newDoc._id);
-    });  
 };
 
 tagDAO.busca = function(req, res) {
