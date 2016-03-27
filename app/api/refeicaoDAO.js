@@ -9,14 +9,27 @@ refeicaoDAO.adiciona = function(req, res) {
     console.log('refeicaoDAO.adiciona');
     console.log('req.body');
     console.log(req.body);
-    req.body.type = tipos.refeicao;
 
-    db.insert(req.body, function(err, newDoc) {
-        if(err) return console.log(err);
-        console.log('Adicionado com sucesso: ' + newDoc._id);
-        console.log(newDoc);
-        res.json(newDoc._id);
-    });  
+    if(req.body._id != undefined) {
+        db.update({_id : req.body_id }, req.body, function(err, numReplaced) {
+            if (err) return console.log(err);
+            if(numReplaced) res.status(200).end();
+            res.status(500).end();
+            console.log('Atualizado com sucesso: ' + req.body._id);
+            res.status(200).end();
+        });
+    } else {
+        req.body.type = tipos.refeicao;
+
+        db.insert(req.body, function(err, newDoc) {
+            if(err) return console.log(err);
+            console.log('Adicionado com sucesso: ' + newDoc._id);
+            console.log(newDoc);
+            res.json(newDoc._id);
+        });
+    }
+
+
 };
 
 refeicaoDAO.busca = function(req, res) {
@@ -43,9 +56,15 @@ refeicaoDAO.atualiza = function(req, res) {
 refeicaoDAO.lista = function(req, res) {
     console.log('refeicaoDAO.lista');
 
-    db.find({type : tipos.refeicao, status : 'NAO_AVALIADO'}).sort({titulo: 1}).exec(function(err, doc) {
+    db.find({type : tipos.refeicao, status : 'NAO_AVALIADO'}).sort({data: -1}).exec(function(err, doc) {
         console.log(doc);
         if (err) return console.log(err);
+
+        for (i = 0; i < doc.length; i++) {
+            var tmpFoto = doc[i].foto;
+            doc[i].foto = 'http://45.55.192.57/'+tmpFoto;
+        }
+
         res.json(doc);
     });
 };
