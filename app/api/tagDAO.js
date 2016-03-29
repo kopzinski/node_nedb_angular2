@@ -13,7 +13,10 @@ tagDAO.adiciona = function(req, res) {
     if(req.body._id != undefined) {
         db.update({_id : req.body._id }, req.body, function(err, numReplaced) {
             if (err) return console.log(err);
-            if(numReplaced) res.status(200).end();
+            if(numReplaced) {
+                console.log(numReplaced);
+                res.status(200).end();
+            }
             res.status(500).end();
             console.log('Atualizado com sucesso: ' + req.body._id);
             res.status(200).end();
