@@ -1,13 +1,13 @@
 import {Component, View, OnInit} from 'angular2/core';
 import {HTTP_PROVIDERS}    from 'angular2/http';
 import {bootstrap} from 'angular2/platform/browser';
-import {Refeicao} from './refeicao';
-import {refeicaoMock} from './mock-refeicao';
-import {RefeicaoService} from './refeicao.service';
+import {Refeicao} from '../interfaces/refeicao';
+import {refeicaoMock} from '../mocks/mock-refeicao';
+import {RefeicaoService} from '../services/refeicao.service';
 
 @Component({
     selector: 'avaliar-comp',
-    templateUrl : 'app/avaliar.html',
+    templateUrl : 'app/templates/avaliar.html',
     providers : [HTTP_PROVIDERS,RefeicaoService ],
     directives : []
 })

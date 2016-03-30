@@ -6,8 +6,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('angular2/core');
 var http_1 = require('angular2/http');
-var mock_refeicao_1 = require('./mock-refeicao');
-var refeicao_service_1 = require('./refeicao.service');
+var mock_refeicao_1 = require('../mocks/mock-refeicao');
+var refeicao_service_1 = require('../services/refeicao.service');
 var AvaliarComponent = (function () {
     function AvaliarComponent(_refeicaoService) {
         this._refeicaoService = _refeicaoService;
@@ -52,7 +52,7 @@ var AvaliarComponent = (function () {
     AvaliarComponent = __decorate([
         core_1.Component({
             selector: 'avaliar-comp',
-            templateUrl: 'app/avaliar.html',
+            templateUrl: 'app/templates/avaliar.html',
             providers: [http_1.HTTP_PROVIDERS, refeicao_service_1.RefeicaoService],
             directives: []
         })

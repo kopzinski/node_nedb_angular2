@@ -6,8 +6,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('angular2/core');
 var http_1 = require('angular2/http');
-var mock_refeicao_1 = require('./mock-refeicao');
-var refeicao_service_1 = require('./refeicao.service');
+var mock_refeicao_1 = require('../mocks/mock-refeicao');
+var refeicao_service_1 = require('../services/refeicao.service');
 var RegistrarComponent = (function () {
     function RegistrarComponent(_refeicaoService) {
         this._refeicaoService = _refeicaoService;
@@ -76,7 +76,7 @@ var RegistrarComponent = (function () {
     RegistrarComponent = __decorate([
         core_1.Component({
             selector: 'registrar-comp',
-            templateUrl: 'app/registrar.html',
+            templateUrl: 'app/templates/registrar.html',
             providers: [http_1.HTTP_PROVIDERS, refeicao_service_1.RefeicaoService],
             directives: []
         })

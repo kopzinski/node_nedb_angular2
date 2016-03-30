@@ -7,21 +7,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
 var avaliar_component_1 = require('./avaliar.component');
+var agua_component_1 = require('./agua.component');
+var peso_component_1 = require('./peso.component');
 var registrar_component_1 = require('./registrar.component');
 var AppComponent = (function () {
-    //list: Refeicao[] = [];
-    //refeicao : Refeicao;
     function AppComponent(_router) {
         this._router = _router;
         this.title = 'KopNutri App';
     }
-    //getRefeicao() {
-    //  this.refeicao = refeicaoMock;
-    //
-    //}
-    AppComponent.prototype.ngOnInit = function () {
-        //this.getRefeicao();
-    };
     AppComponent.prototype.goToAvaliar = function () {
         console.log('goToAvaliar()');
         this._router.navigate(['Avaliar']);
@@ -30,9 +23,18 @@ var AppComponent = (function () {
         console.log('goToRegistrar()');
         this._router.navigate(['Registrar']);
     };
+    AppComponent.prototype.goToAgua = function () {
+        console.log('goToAgua()');
+        this._router.navigate(['Agua']);
+    };
+    AppComponent.prototype.goToPeso = function () {
+        console.log('goToPeso()');
+        this._router.navigate(['Peso']);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'kop-app',
+            template: "\n    <nav>\n    <button (click)=\"goToRegistrar()\">Registrar</button>\n    <button (click)=\"goToAvaliar()\">Avaliar</button>\n    <button (click)=\"goToAgua()\">Agua</button>\n    <button (click)=\"goToPeso()\">Peso</button>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
             templateUrl: 'app/principal.html',
             directives: [router_1.ROUTER_DIRECTIVES],
             providers: [
@@ -50,6 +52,16 @@ var AppComponent = (function () {
                 path: '/registrar',
                 name: 'Registrar',
                 component: registrar_component_1.RegistrarComponent
+            },
+            {
+                path: '/agua',
+                name: 'Agua',
+                component: agua_component_1.AguaComponent
+            },
+            {
+                path: '/peso',
+                name: 'Peso',
+                component: peso_component_1.PesoComponent
             }
         ])
     ], AppComponent);

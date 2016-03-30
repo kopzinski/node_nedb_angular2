@@ -1,0 +1,25 @@
+<main>
+    <span>{{errorMessage}}</span>
+    <h3 class="text-center">{{title}}</h3>
+        <input [(ngModel)]="agua.quantidade" type="text" id="peso" class="form-control input-lg input-center input-more-lg" placeholder="100 ml" required autofocus>
+
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Quantidade</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="#agua of list">
+                    <td>{{agua.data}}</td>
+                    <td>{{agua.peso}} kg</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <a  (click)="registrar()" class="btn btn-danger">Registrar</a>
+
+</main>

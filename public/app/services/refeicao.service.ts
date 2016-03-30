@@ -1,6 +1,6 @@
 import {Injectable}     from 'angular2/core';
 import {Http, Response} from 'angular2/http';
-import {Refeicao}           from './refeicao';
+import {Refeicao}           from '../interfaces/refeicao';
 import {Observable}     from 'rxjs/Observable';
 import {Headers, RequestOptions, RequestMethod} from 'angular2/http';
 

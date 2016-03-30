@@ -60,10 +60,10 @@ refeicaoDAO.lista = function(req, res) {
         console.log(doc);
         if (err) return console.log(err);
 
-        for (i = 0; i < doc.length; i++) {
-            var tmpFoto = doc[i].foto;
-            doc[i].foto = 'http://45.55.192.57/'+tmpFoto;
-        }
+        //for (i = 0; i < doc.length; i++) {
+        //    var tmpFoto = doc[i].foto;
+        //    doc[i].foto = 'http://45.55.192.57/'+tmpFoto;
+        //}
 
         res.json(doc);
     });

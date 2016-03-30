@@ -1,4 +1,4 @@
-import {Refeicao} from './refeicao';
+import {Refeicao} from '../interfaces/refeicao';
 export var refeicaoMock = {
     foto: '',
     atleta: 'Paulo Mello',
