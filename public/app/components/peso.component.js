@@ -27,7 +27,7 @@ var PesoComponent = (function () {
     PesoComponent.prototype.getPesos = function () {
         var _this = this;
         this._pesoService.getPesos()
-            .subscribe(function (pesos) { return _this.list = pesos; }, function (error) { return _this.errorMessage = error; });
+            .subscribe(function (data) { return _this.populaPesos(data._body); }, function (error) { return _this.errorMessage = error; });
     };
     PesoComponent.prototype.registrar = function () {
         var _this = this;

@@ -3,13 +3,14 @@ var  multer  = require('multer');
 var bodyParser = require('body-parser');
 var refeicao = require('./app/api/refeicaoDAO');
 var tag = require('./app/api/tagDAO');
+var agua = require('./app/api/aguaDAO');
+var peso = require('./app/api/pesoDAO');
 var path = require('path');
 var routes = require('./app/routes');
 var app = express();
 
 app.use(multer({ dest: './uploads/fotos'}));
 
-// parse application/json
 app.use(bodyParser.json());
 
 
@@ -38,7 +39,7 @@ app.route('/v1/refeicoes/:refeicaoId')
 //app.get('/v1/grupos', api.listaGrupos)
 //app.get('/v1/fotos/grupo/:grupoId', api.listaPorGrupo);
 
-//Menos importantes por enquanto..
+//TAGS
 app.route('/v1/tags')
     .post(tag.adiciona)
     .get(tag.lista);
@@ -46,6 +47,25 @@ app.route('/v1/tags/:tagId')
     .delete(tag.remove)
     .get(tag.busca)
     .put(tag.atualiza);
+
+//AGUAS
+app.route('/v1/aguas')
+    .post(agua.adiciona)
+    .get(agua.lista);
+app.route('/v1/aguas/:aguaId')
+    .delete(agua.remove)
+    .get(agua.busca)
+    .put(agua.atualiza);
+
+//PESOS
+app.route('/v1/pesos')
+    .post(peso.adiciona)
+    .get(peso.lista);
+app.route('/v1/pesos/:pesoId')
+    .delete(peso.remove)
+    .get(peso.busca)
+    .put(peso.atualiza);
+
 
 // habilitando HTML5MODE
 app.all('\\/*', function(req, res) {

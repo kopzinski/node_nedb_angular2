@@ -27,7 +27,7 @@ var AguaComponent = (function () {
     AguaComponent.prototype.getAguas = function () {
         var _this = this;
         this._aguaService.getAguas()
-            .subscribe(function (aguas) { return _this.list = aguas; }, function (error) { return _this.errorMessage = error; });
+            .subscribe(function (data) { return _this.populaAguas(data._body); }, function (error) { return _this.errorMessage = error; });
     };
     AguaComponent.prototype.registrar = function () {
         var _this = this;

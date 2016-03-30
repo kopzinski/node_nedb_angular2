@@ -1,5 +1,5 @@
 var Datastore = require('nedb')
-    ,dbName = 'data5.db'
+    ,dbName = './data5.db'
     ,db;
 
 if(!db) {

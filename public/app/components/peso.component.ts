@@ -40,7 +40,7 @@ export class PesoComponent implements OnInit {
     getPesos() {
         this._pesoService.getPesos()
             .subscribe(
-                pesos => this.list = pesos,
+                data => this.populaPesos(data._body),
                 error =>  this.errorMessage = <any>error);
     }
     registrar() {

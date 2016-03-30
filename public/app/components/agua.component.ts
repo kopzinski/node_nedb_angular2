@@ -40,7 +40,7 @@ export class AguaComponent implements OnInit {
     getAguas() {
         this._aguaService.getAguas()
             .subscribe(
-                aguas => this.list = aguas,
+                data => this.populaAguas(data._body),
                 error =>  this.errorMessage = <any>error);
     }
     registrar() {

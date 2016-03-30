@@ -3,7 +3,8 @@ tipos = {
     tag : 'TAG',
     atleta : 'ATLETA',
     nutricionista : 'NUTRICIONISTA',
-    peso : 'PESO'
+    peso : 'PESO',
+    agua : 'AGUA'
 
 };
 
