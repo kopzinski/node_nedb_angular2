@@ -28,7 +28,7 @@ import {refeicaoMock} from '../mocks/mock-refeicao';
 
 @RouteConfig([
   {
-    path: '/',
+    path: '/avaliar',
     name: 'Avaliar',
     component: AvaliarComponent,
     useAsDefault: true
@@ -46,7 +46,7 @@ import {refeicaoMock} from '../mocks/mock-refeicao';
 
   },
   {
-    path: '/peso',
+    path: '/',
     name: 'Peso',
     component: PesoComponent,
 

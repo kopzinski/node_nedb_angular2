@@ -43,7 +43,7 @@ var AppComponent = (function () {
         }),
         router_1.RouteConfig([
             {
-                path: '/',
+                path: '/avaliar',
                 name: 'Avaliar',
                 component: avaliar_component_1.AvaliarComponent,
                 useAsDefault: true
@@ -59,7 +59,7 @@ var AppComponent = (function () {
                 component: agua_component_1.AguaComponent
             },
             {
-                path: '/peso',
+                path: '/',
                 name: 'Peso',
                 component: peso_component_1.PesoComponent
             }

@@ -22,7 +22,6 @@ var AguaComponent = (function () {
     AguaComponent.prototype.ngOnInit = function () {
         this.getAgua();
         this.getAguas();
-        console.log(this.list);
     };
     AguaComponent.prototype.getAguas = function () {
         var _this = this;
@@ -32,11 +31,23 @@ var AguaComponent = (function () {
     AguaComponent.prototype.registrar = function () {
         var _this = this;
         this._aguaService.addAgua(this.agua)
-            .subscribe(function (data) { return _this.populaAguas(data._body); }, function (error) { return _this.errorMessage = error; });
+            .subscribe(function (data) { return _this.adicionaNaLista(JSON.parse(data._body)); }, function (error) { return _this.errorMessage = error; });
+    };
+    AguaComponent.prototype.adicionaNaLista = function (agua) {
+        agua.data = Date.parse(agua.data);
+        this.list.push(agua);
     };
     AguaComponent.prototype.populaAguas = function (input) {
         this.list = JSON.parse(input);
+        this.list.forEach(function (element) {
+            element.data = Date.parse(element.data);
+        });
         //this.refeicao = JSON.parse(input);
+    };
+    AguaComponent.prototype.remover = function (agua) {
+        var _this = this;
+        this._aguaService.removeAgua(agua._id)
+            .subscribe(function (data) { return _this.getAguas(); }, function (error) { return _this.errorMessage = error; });
     };
     AguaComponent = __decorate([
         core_1.Component({

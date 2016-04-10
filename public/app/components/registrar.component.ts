@@ -19,7 +19,7 @@ export class RegistrarComponent implements OnInit {
     filesToUpload: Array<File>;
 
     title = 'Registrar Refeição';
-    list: Refeicao[] = [];
+    //list: Refeicao[] = [];
     refeicao : Refeicao = refeicaoMock;
     errorMessage: string;
 
@@ -68,33 +68,34 @@ export class RegistrarComponent implements OnInit {
 
     getRefeicao() {
         this.refeicao;
-
     }
 
     ngOnInit() {
         this.getRefeicao();
-        this.getRefeicoes();
+        //this.getRefeicoes();
         console.log(this.list);
     }
 
 
-    getRefeicoes() {
-        this._refeicaoService.getRefeicoes()
-            .subscribe(
-                refeicoes => this.list = refeicoes,
-                error =>  this.errorMessage = <any>error);
-    }
+    //getRefeicoes() {
+    //    this._refeicaoService.getRefeicoes()
+    //        .subscribe(
+    //            refeicoes => this.list = refeicoes,
+    //            error =>  this.errorMessage = <any>error);
+    //}
+
     registrar() {
 
         this._refeicaoService.addRefeicao(this.refeicao)
             .subscribe(
-                data  => this.populaRefeicoes(data._body),
+                //data  => this.populaRefeicoes(data._body),
+                data  => console.log(data._body),
                 error =>  this.errorMessage = <any>error);
     }
 
-    populaRefeicoes(input) {
-        this.list = JSON.parse(input);
-        //this.refeicao = JSON.parse(input);
-    }
+    //populaRefeicoes(input) {
+    //    this.list = JSON.parse(input);
+    //    //this.refeicao = JSON.parse(input);
+    //}
 
 }

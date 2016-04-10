@@ -30,6 +30,9 @@ var AguaService = (function () {
         var options = { headers: headers };
         return this.http.put(this._aguasUrl + '/' + agua._id, body, options);
     };
+    AguaService.prototype.removeAgua = function (aguaId) {
+        return this.http.delete(this._aguasUrl + '/' + aguaId);
+    };
     AguaService.prototype.handleError = function (error) {
         console.error(error);
         return Observable_1.Observable.throw(error.json().error || 'Server error');

@@ -9,7 +9,7 @@
                     <h4>Atleta: {{refeicao.atleta}}</h4>
                     <span *ngIf="refeicao.esporte">Esporte: {{refeicao.esporte}}</span>
                 </div>
-                <img width="200px" src="{{refeicao.foto}}" alt="{{refeicao.atleta}} em {{refeicao.data}}" />
+                <img width="200px" src="{{refeicao.foto}}" alt="{{refeicao.atleta}} em {{refeicao.data  | date:'mediumDate'}}" />
 
                 <div >
                     <span class="label label-info">
@@ -17,7 +17,7 @@
                     </span>
                 </div>
             </figure>
-            <p>{{refeicao.data}}</p>
+            <p>{{refeicao.data  | date:'yMMMdjm'}}</p>
             <a  (click)="aprovar(refeicao)" class="btn btn-success">Aprovar</a>
             <a  (click)="reprovar(refeicao)" class="btn btn-danger">Reprovar</a>
         </div>

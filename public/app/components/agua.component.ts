@@ -20,6 +20,7 @@ export class AguaComponent implements OnInit {
     list: Agua[] = [];
     agua : Agua = aguaMock;
     errorMessage: string;
+    dataTeste;
 
     constructor (private _aguaService : AguaService){
         this.getAgua();
@@ -33,7 +34,6 @@ export class AguaComponent implements OnInit {
     ngOnInit() {
         this.getAgua();
         this.getAguas();
-        console.log(this.list);
     }
 
 
@@ -47,13 +47,28 @@ export class AguaComponent implements OnInit {
 
         this._aguaService.addAgua(this.agua)
             .subscribe(
-                data  => this.populaAguas(data._body),
+                data  => this.adicionaNaLista(JSON.parse(data._body)),
                 error =>  this.errorMessage = <any>error);
+    }
+    adicionaNaLista(agua){
+        agua.data = Date.parse(agua.data);
+        this.list.push(agua);
     }
 
     populaAguas(input) {
         this.list = JSON.parse(input);
+        this.list.forEach(
+            function(element){
+                element.data = Date.parse(element.data);
+            });
         //this.refeicao = JSON.parse(input);
+    }
+
+    remover(agua: Agua){
+        this._aguaService.removeAgua(agua._id)
+            .subscribe(
+                data => this.getAguas(),
+                error =>  this.errorMessage = <any>error);
     }
 
 }

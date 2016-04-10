@@ -41,6 +41,10 @@ export class AvaliarComponent implements OnInit {
 
     populaRefeicoes(input) {
         this.list = JSON.parse(input);
+        this.list.forEach(
+            function(element) {
+                element.data = Date.parse(element.data);
+            });
     }
 
     aprovar(refeicao : Refeicao){

@@ -29,7 +29,7 @@ tagDAO.adiciona = function(req, res) {
             console.log('Adicionado com sucesso: ' + newDoc._id);
             console.log('Salvo:');
             console.log(newDoc);
-            res.json(newDoc._id);
+            res.json(newDoc);
         });
     }
 

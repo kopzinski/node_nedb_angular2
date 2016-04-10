@@ -33,6 +33,11 @@ export class PesoService {
         return this.http.put(this._pesosUrl + '/' + peso._id, body, options);
     }
 
+    removePeso(pesoId : string){
+        console.log('removendo' + pesoId);
+        return this.http.delete(this._pesosUrl + '/' + pesoId);
+    }
+
     private handleError (error: Response) {
         console.error(error);
         return Observable.throw(error.json().error || 'Server error');

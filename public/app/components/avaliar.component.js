@@ -30,6 +30,9 @@ var AvaliarComponent = (function () {
     };
     AvaliarComponent.prototype.populaRefeicoes = function (input) {
         this.list = JSON.parse(input);
+        this.list.forEach(function (element) {
+            element.data = Date.parse(element.data);
+        });
     };
     AvaliarComponent.prototype.aprovar = function (refeicao) {
         refeicao.status = 'APROVADO';

@@ -30,6 +30,10 @@ var PesoService = (function () {
         var options = { headers: headers };
         return this.http.put(this._pesosUrl + '/' + peso._id, body, options);
     };
+    PesoService.prototype.removePeso = function (pesoId) {
+        console.log('removendo' + pesoId);
+        return this.http.delete(this._pesosUrl + '/' + pesoId);
+    };
     PesoService.prototype.handleError = function (error) {
         console.error(error);
         return Observable_1.Observable.throw(error.json().error || 'Server error');

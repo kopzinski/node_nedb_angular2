@@ -13,8 +13,9 @@
             </thead>
             <tbody>
             <tr *ngFor="#peso of list">
-                <td>{{peso.data}}</td>
+                <td>{{peso.data | date:'mediumDate'}}</td>
                 <td>{{peso.peso}} kg</td>
+                <td> <a  (click)="remover(peso)" class="btn btn-danger">Remover</a></td>
             </tr>
 
             </tbody>

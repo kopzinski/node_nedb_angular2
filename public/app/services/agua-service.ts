@@ -33,6 +33,10 @@ export class AguaService {
         return this.http.put(this._aguasUrl + '/' +agua._id, body, options);
     }
 
+    removeAgua(aguaId : string){
+        return this.http.delete(this._aguasUrl + '/' + aguaId);
+    }
+
     private handleError (error: Response) {
         console.error(error);
         return Observable.throw(error.json().error || 'Server error');

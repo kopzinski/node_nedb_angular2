@@ -12,7 +12,7 @@ var RegistrarComponent = (function () {
     function RegistrarComponent(_refeicaoService) {
         this._refeicaoService = _refeicaoService;
         this.title = 'Registrar Refeição';
-        this.list = [];
+        //list: Refeicao[] = [];
         this.refeicao = mock_refeicao_1.refeicaoMock;
         this.getRefeicao();
         this.filesToUpload = [];
@@ -56,22 +56,21 @@ var RegistrarComponent = (function () {
     };
     RegistrarComponent.prototype.ngOnInit = function () {
         this.getRefeicao();
-        this.getRefeicoes();
+        //this.getRefeicoes();
         console.log(this.list);
     };
-    RegistrarComponent.prototype.getRefeicoes = function () {
-        var _this = this;
-        this._refeicaoService.getRefeicoes()
-            .subscribe(function (refeicoes) { return _this.list = refeicoes; }, function (error) { return _this.errorMessage = error; });
-    };
+    //getRefeicoes() {
+    //    this._refeicaoService.getRefeicoes()
+    //        .subscribe(
+    //            refeicoes => this.list = refeicoes,
+    //            error =>  this.errorMessage = <any>error);
+    //}
     RegistrarComponent.prototype.registrar = function () {
         var _this = this;
         this._refeicaoService.addRefeicao(this.refeicao)
-            .subscribe(function (data) { return _this.populaRefeicoes(data._body); }, function (error) { return _this.errorMessage = error; });
-    };
-    RegistrarComponent.prototype.populaRefeicoes = function (input) {
-        this.list = JSON.parse(input);
-        //this.refeicao = JSON.parse(input);
+            .subscribe(
+        //data  => this.populaRefeicoes(data._body),
+        function (data) { return console.log(data._body); }, function (error) { return _this.errorMessage = error; });
     };
     RegistrarComponent = __decorate([
         core_1.Component({

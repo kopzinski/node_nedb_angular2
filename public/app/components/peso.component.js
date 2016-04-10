@@ -22,7 +22,6 @@ var PesoComponent = (function () {
     PesoComponent.prototype.ngOnInit = function () {
         this.getPeso();
         this.getPesos();
-        console.log(this.list);
     };
     PesoComponent.prototype.getPesos = function () {
         var _this = this;
@@ -32,11 +31,23 @@ var PesoComponent = (function () {
     PesoComponent.prototype.registrar = function () {
         var _this = this;
         this._pesoService.addPeso(this.peso)
-            .subscribe(function (data) { return _this.populaPesos(data._body); }, function (error) { return _this.errorMessage = error; });
+            .subscribe(function (data) { return _this.adicionaNaLista(JSON.parse(data._body)); }, function (error) { return _this.errorMessage = error; });
+    };
+    PesoComponent.prototype.adicionaNaLista = function (agua) {
+        agua.data = Date.parse(agua.data);
+        this.list.push(agua);
     };
     PesoComponent.prototype.populaPesos = function (input) {
         this.list = JSON.parse(input);
+        this.list.forEach(function (element) {
+            element.data = Date.parse(element.data);
+        });
         //this.refeicao = JSON.parse(input);
+    };
+    PesoComponent.prototype.remover = function (peso) {
+        var _this = this;
+        this._pesoService.removePeso(peso._id)
+            .subscribe(function (data) { return _this.getPesos(); }, function (error) { return _this.errorMessage = error; });
     };
     PesoComponent = __decorate([
         core_1.Component({

@@ -33,7 +33,6 @@ export class PesoComponent implements OnInit {
     ngOnInit() {
         this.getPeso();
         this.getPesos();
-        console.log(this.list);
     }
 
 
@@ -47,13 +46,30 @@ export class PesoComponent implements OnInit {
 
         this._pesoService.addPeso(this.peso)
             .subscribe(
-                data  => this.populaPesos(data._body),
+                data  => this.adicionaNaLista(JSON.parse(data._body)),
                 error =>  this.errorMessage = <any>error);
+    }
+
+    adicionaNaLista(agua){
+        agua.data = Date.parse(agua.data);
+        this.list.push(agua);
     }
 
     populaPesos(input) {
         this.list = JSON.parse(input);
+        this.list.forEach(
+            function(element){
+                element.data = Date.parse(element.data);
+            });
         //this.refeicao = JSON.parse(input);
     }
+
+    remover(peso : Peso){
+        this._pesoService.removePeso(peso._id)
+            .subscribe(
+                data => this.getPesos(),
+                error =>  this.errorMessage = <any>error);
+    }
+
 
 }
