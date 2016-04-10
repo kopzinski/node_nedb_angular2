@@ -2,38 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b991282-b8b4-4a83-a2a3-6e046f95cdd3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kopnutridigitalocean" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kopnutridigitalocean.pub" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/aguaDAO.js" afterPath="$PROJECT_DIR$/app/api/aguaDAO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/pesoDAO.js" afterPath="$PROJECT_DIR$/app/api/pesoDAO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/tagDAO.js" afterPath="$PROJECT_DIR$/app/api/tagDAO.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/agua.component.js" afterPath="$PROJECT_DIR$/public/app/components/agua.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/agua.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/agua.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/agua.component.ts" afterPath="$PROJECT_DIR$/public/app/components/agua.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/app.component.js" afterPath="$PROJECT_DIR$/public/app/components/app.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/app.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/app.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/app.component.ts" afterPath="$PROJECT_DIR$/public/app/components/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/avaliar.component.js" afterPath="$PROJECT_DIR$/public/app/components/avaliar.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/avaliar.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/avaliar.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/avaliar.component.ts" afterPath="$PROJECT_DIR$/public/app/components/avaliar.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/peso.component.js" afterPath="$PROJECT_DIR$/public/app/components/peso.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/peso.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/peso.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/peso.component.ts" afterPath="$PROJECT_DIR$/public/app/components/peso.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/registrar.component.js" afterPath="$PROJECT_DIR$/public/app/components/registrar.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/registrar.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/registrar.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/registrar.component.ts" afterPath="$PROJECT_DIR$/public/app/components/registrar.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/interfaces/agua.ts" afterPath="$PROJECT_DIR$/public/app/interfaces/agua.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/agua-service.js" afterPath="$PROJECT_DIR$/public/app/services/agua-service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/agua-service.js.map" afterPath="$PROJECT_DIR$/public/app/services/agua-service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/agua-service.ts" afterPath="$PROJECT_DIR$/public/app/services/agua-service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/peso-service.js" afterPath="$PROJECT_DIR$/public/app/services/peso-service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/peso-service.js.map" afterPath="$PROJECT_DIR$/public/app/services/peso-service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/peso-service.ts" afterPath="$PROJECT_DIR$/public/app/services/peso-service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/templates/agua.html" afterPath="$PROJECT_DIR$/public/app/templates/agua.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/templates/avaliar.html" afterPath="$PROJECT_DIR$/public/app/templates/avaliar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/templates/peso.html" afterPath="$PROJECT_DIR$/public/app/templates/peso.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/templates/registrar.html" afterPath="$PROJECT_DIR$/public/app/templates/registrar.html" />
     </list>
     <ignored path="node_nedb_angular2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +24,20 @@
     <favorites_list name="node_nedb_angular2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/components/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49707603">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+              <folding>
+                <marker date="1460316167000" expanded="true" signature="543:758" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,13 +84,13 @@
         <option value="$PROJECT_DIR$/app/api/tagDAO.js" />
         <option value="$PROJECT_DIR$/app/api/aguaDAO.js" />
         <option value="$PROJECT_DIR$/app/api/pesoDAO.js" />
-        <option value="$PROJECT_DIR$/public/app/components/app.component.ts" />
         <option value="$PROJECT_DIR$/public/app/templates/peso.html" />
         <option value="$PROJECT_DIR$/public/app/services/peso-service.ts" />
         <option value="$PROJECT_DIR$/public/app/components/peso.component.ts" />
         <option value="$PROJECT_DIR$/public/app/components/agua.component.ts" />
         <option value="$PROJECT_DIR$/public/app/services/agua-service.ts" />
         <option value="$PROJECT_DIR$/public/app/templates/agua.html" />
+        <option value="$PROJECT_DIR$/public/app/components/app.component.ts" />
       </list>
     </option>
   </component>
@@ -422,9 +406,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24225576" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24225576" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20558003" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -746,16 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-          <folding>
-            <marker date="1460314751000" expanded="true" signature="543:758" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/components/avaliar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -841,6 +815,16 @@
         <state vertical-scroll-proportion="0.7894737">
           <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49707603">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <folding>
+            <marker date="1460316167000" expanded="true" signature="543:758" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

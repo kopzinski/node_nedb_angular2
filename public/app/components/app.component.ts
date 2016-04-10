@@ -31,13 +31,12 @@ import {refeicaoMock} from '../mocks/mock-refeicao';
     path: '/avaliar',
     name: 'Avaliar',
     component: AvaliarComponent,
-    useAsDefault: true
   },
   {
-    path: '/registrar',
+    path: '/',
     name: 'Registrar',
     component: RegistrarComponent,
-
+    useAsDefault: true
   },
   {
     path: '/agua',
@@ -46,7 +45,7 @@ import {refeicaoMock} from '../mocks/mock-refeicao';
 
   },
   {
-    path: '/',
+    path: '/peso',
     name: 'Peso',
     component: PesoComponent,
 

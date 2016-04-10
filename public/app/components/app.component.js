@@ -45,13 +45,13 @@ var AppComponent = (function () {
             {
                 path: '/avaliar',
                 name: 'Avaliar',
-                component: avaliar_component_1.AvaliarComponent,
-                useAsDefault: true
+                component: avaliar_component_1.AvaliarComponent
             },
             {
-                path: '/registrar',
+                path: '/',
                 name: 'Registrar',
-                component: registrar_component_1.RegistrarComponent
+                component: registrar_component_1.RegistrarComponent,
+                useAsDefault: true
             },
             {
                 path: '/agua',
@@ -59,7 +59,7 @@ var AppComponent = (function () {
                 component: agua_component_1.AguaComponent
             },
             {
-                path: '/',
+                path: '/peso',
                 name: 'Peso',
                 component: peso_component_1.PesoComponent
             }
