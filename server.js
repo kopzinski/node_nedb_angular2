@@ -73,10 +73,10 @@ app.all('\\/*', function(req, res) {
     res.sendfile('index.html');
 });
 
-//app.listen(80, function(app) {
-//    console.log('Servido escutando a porta 80');
-//});
-
-app.listen(3000, function(app) {
-    console.log('Servido escutando a porta 3000');
+app.listen(80, function(app) {
+    console.log('Servido escutando a porta 80');
 });
+
+//app.listen(3000, function(app) {
+//    console.log('Servido escutando a porta 3000');
+//});
