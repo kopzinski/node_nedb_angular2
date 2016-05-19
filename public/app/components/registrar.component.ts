@@ -19,7 +19,7 @@ export class RegistrarComponent implements OnInit {
     filesToUpload: Array<File>;
 
     title = 'Registrar Refeição';
-    //list: Refeicao[] = [];
+    list: Refeicao[] = [];
     refeicao : Refeicao = refeicaoMock;
     errorMessage: string;
 

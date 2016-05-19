@@ -5,6 +5,7 @@ var refeicao = require('./app/api/refeicaoDAO');
 var tag = require('./app/api/tagDAO');
 var agua = require('./app/api/aguaDAO');
 var peso = require('./app/api/pesoDAO');
+var usuario = require('./app/api/usuarioDAO');
 var path = require('path');
 var routes = require('./app/routes');
 var app = express();
@@ -66,6 +67,17 @@ app.route('/v1/pesos/:pesoId')
     .get(peso.busca)
     .put(peso.atualiza);
 
+//USUARIOS
+app.route('/v1/usuarios')
+    .post(usuario.adiciona)
+    .get(usuario.lista);
+app.route('/v1/usuarios/:usuarioId')
+    .delete(usuario.remove)
+    .get(usuario.busca)
+    .put(usuario.atualiza);
+
+app.route('/v1/login')
+    .post(usuario.login);
 
 // habilitando HTML5MODE
 app.all('\\/*', function(req, res) {

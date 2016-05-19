@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -33,14 +34,17 @@ var AvaliarComponent = (function () {
         this.list.forEach(function (element) {
             element.data = Date.parse(element.data);
         });
+        this.refeicao = this.list[0];
     };
     AvaliarComponent.prototype.aprovar = function (refeicao) {
         refeicao.status = 'APROVADO';
         this.salvar(refeicao);
+        this.getRefeicoes();
     };
     AvaliarComponent.prototype.reprovar = function (refeicao) {
         refeicao.status = 'REPROVADO';
         this.salvar(refeicao);
+        this.getRefeicoes();
     };
     AvaliarComponent.prototype.salvar = function (refeicao) {
         var _this = this;
@@ -61,6 +65,6 @@ var AvaliarComponent = (function () {
         })
     ], AvaliarComponent);
     return AvaliarComponent;
-})();
+}());
 exports.AvaliarComponent = AvaliarComponent;
 //# sourceMappingURL=avaliar.component.js.map

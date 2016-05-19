@@ -1,3 +1,4 @@
+"use strict";
 exports.aguaMock = {
     atleta: 'Paulo Mello',
     data: new Date(),

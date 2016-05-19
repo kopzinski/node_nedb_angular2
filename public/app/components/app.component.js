@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6,39 +7,63 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require('angular2/core');
 var router_1 = require('angular2/router');
+var http_1 = require('angular2/http');
 var avaliar_component_1 = require('./avaliar.component');
 var agua_component_1 = require('./agua.component');
 var peso_component_1 = require('./peso.component');
 var registrar_component_1 = require('./registrar.component');
+var usuario_service_1 = require("../services/usuario.service");
 var AppComponent = (function () {
-    function AppComponent(_router) {
+    function AppComponent(_router, _usuarioService) {
         this._router = _router;
+        this._usuarioService = _usuarioService;
         this.title = 'KopNutri App';
+        this.logado = false;
+        this.isAtleta = false;
+        this.usuario = {};
     }
+    AppComponent.prototype.ngOnInit = function () {
+    };
     AppComponent.prototype.goToAvaliar = function () {
-        console.log('goToAvaliar()');
         this._router.navigate(['Avaliar']);
     };
     AppComponent.prototype.goToRegistrar = function () {
-        console.log('goToRegistrar()');
         this._router.navigate(['Registrar']);
     };
     AppComponent.prototype.goToAgua = function () {
-        console.log('goToAgua()');
         this._router.navigate(['Agua']);
     };
     AppComponent.prototype.goToPeso = function () {
-        console.log('goToPeso()');
         this._router.navigate(['Peso']);
+    };
+    AppComponent.prototype.login = function () {
+        var _this = this;
+        this._usuarioService.login(this.usuario)
+            .subscribe(function (data) { return _this.changeScreen(JSON.parse(data._body)); }, function (error) { return _this.errorMessage = error; });
+    };
+    AppComponent.prototype.changeScreen = function (usuario) {
+        console.log(usuario);
+        if (usuario != null) {
+            this.logado = true;
+            if (usuario.type == "ATLETA") {
+                this.isAtleta = true;
+            }
+        }
+        else {
+            this.errorMessage = 'Usuário ou senha inválidos';
+            this.logado = false;
+        }
+    };
+    AppComponent.prototype.logout = function () {
+        this.logado = false;
     };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'kop-app',
-            template: "\n    <nav>\n    <button (click)=\"goToRegistrar()\">Registrar</button>\n    <button (click)=\"goToAvaliar()\">Avaliar</button>\n    <button (click)=\"goToAgua()\">Agua</button>\n    <button (click)=\"goToPeso()\">Peso</button>\n    </nav>\n    <router-outlet></router-outlet>\n  ",
-            templateUrl: 'app/principal.html',
+            template: "\n  <span>{{errorMessage}}</span>\n<div *ngIf=\"logado\">\n  <nav class=\"text-center\">\n    <button *ngIf=\"isAtleta\" (click)=\"goToRegistrar()\">Registrar</button>\n    <button *ngIf=\"!isAtleta\" (click)=\"goToAvaliar()\">Avaliar</button>\n    <button *ngIf=\"isAtleta\" (click)=\"goToAgua()\">Agua</button>\n    <button *ngIf=\"isAtleta\" (click)=\"goToPeso()\">Peso</button>\n    <button (click)=\"logout()\">Sair</button>\n  </nav>\n  <router-outlet></router-outlet>\n</div>\n<div class=\"text-center\">\n<div *ngIf=\"!logado\"  class=\"col-xs-3 text-center\" >\n  <input [(ngModel)]=\"usuario.login\"  type=\"text\" id=\"username\" class=\"form-control \" >\n  <input [(ngModel)]=\"usuario.senha\"  type=\"text\" id=\"password\" class=\"form-control \" >\n  <a (click)=\"login()\" class=\"btn btn-info\">Login</a>\n</div>\n</div>\n  ",
             directives: [router_1.ROUTER_DIRECTIVES],
             providers: [
-                router_1.ROUTER_PROVIDERS
+                router_1.ROUTER_PROVIDERS, http_1.HTTP_PROVIDERS, usuario_service_1.UsuarioService
             ]
         }),
         router_1.RouteConfig([
@@ -66,6 +91,6 @@ var AppComponent = (function () {
         ])
     ], AppComponent);
     return AppComponent;
-})();
+}());
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

@@ -1,28 +1,39 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import { Router, RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
-import {Refeicao} from '../interfaces/refeicao';
+import {HTTP_PROVIDERS}    from 'angular2/http';
 import {AvaliarComponent} from './avaliar.component';
 import {AguaComponent} from './agua.component';
 import {PesoComponent} from './peso.component';
 import {RegistrarComponent} from './registrar.component';
-//import {TodoForm} from './todo_form';
-import {refeicaoMock} from '../mocks/mock-refeicao';
+import {UsuarioService} from "../services/usuario.service";
+import {Usuario} from "../interfaces/usuario";
+
 
 @Component({
   selector: 'kop-app',
   template : `
-    <nav>
-    <button (click)="goToRegistrar()">Registrar</button>
-    <button (click)="goToAvaliar()">Avaliar</button>
-    <button (click)="goToAgua()">Agua</button>
-    <button (click)="goToPeso()">Peso</button>
-    </nav>
-    <router-outlet></router-outlet>
+  <span>{{errorMessage}}</span>
+<div *ngIf="logado">
+  <nav class="text-center">
+    <button *ngIf="isAtleta" (click)="goToRegistrar()">Registrar</button>
+    <button *ngIf="!isAtleta" (click)="goToAvaliar()">Avaliar</button>
+    <button *ngIf="isAtleta" (click)="goToAgua()">Agua</button>
+    <button *ngIf="isAtleta" (click)="goToPeso()">Peso</button>
+    <button (click)="logout()">Sair</button>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
+<div class="text-center">
+<div *ngIf="!logado"  class="col-xs-3 text-center" >
+  <input [(ngModel)]="usuario.login"  type="text" id="username" class="form-control " >
+  <input [(ngModel)]="usuario.senha"  type="text" id="password" class="form-control " >
+  <a (click)="login()" class="btn btn-info">Login</a>
+</div>
+</div>
   `,
-  templateUrl : 'app/principal.html',
   directives: [ROUTER_DIRECTIVES],
   providers: [
-    ROUTER_PROVIDERS
+    ROUTER_PROVIDERS, HTTP_PROVIDERS, UsuarioService
   ]
 })
 
@@ -53,29 +64,58 @@ import {refeicaoMock} from '../mocks/mock-refeicao';
 ])
 
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'KopNutri App';
+  logado = false;
+  isAtleta = false;
+  usuario : Usuario = {};
+  errorMessage: string;
 
-  constructor(private _router: Router) { }
+  constructor(private _router: Router, private _usuarioService : UsuarioService) { }
+
+  ngOnInit() {
+  }
 
   goToAvaliar() {
-    console.log('goToAvaliar()');
     this._router.navigate(['Avaliar']);
   }
 
   goToRegistrar() {
-    console.log('goToRegistrar()');
     this._router.navigate(['Registrar']);
   }
 
   goToAgua() {
-    console.log('goToAgua()');
     this._router.navigate(['Agua']);
   }
 
   goToPeso() {
-    console.log('goToPeso()');
     this._router.navigate(['Peso']);
   }
+
+  login(){
+    this._usuarioService.login(this.usuario)
+        .subscribe(
+            data  => this.changeScreen(JSON.parse(data._body)),
+            error =>  this.errorMessage = <any>error);
+  }
+
+  changeScreen( usuario ) {
+    console.log(usuario);
+    if(usuario != null) {
+      this.logado = true;
+      if(usuario.type == "ATLETA") {
+        this.isAtleta = true;
+      }
+    } else {
+      this.errorMessage = 'Usuário ou senha inválidos';
+      this.logado = false;
+    }
+
+  }
+
+  logout() {
+    this.logado = false;
+  }
+
 
 }

@@ -2,26 +2,23 @@
     <span>{{errorMessage}}</span>
     <h3 class="text-center">Avaliar Refeição</h3>
 
-    <div *ngFor="#refeicao of list"  class="col-1-4" >
-        <div class="thumbnail text-center">
-            <figure >
-                <div>
-                    <h4>Atleta: {{refeicao.atleta}}</h4>
-                    <span *ngIf="refeicao.esporte">Esporte: {{refeicao.esporte}}</span>
-                </div>
-                <img width="200px" src="{{refeicao.foto}}" alt="{{refeicao.atleta}} em {{refeicao.data  | date:'mediumDate'}}" />
 
-                <div >
+    <div class="thumbnail text-center">
+        <figure >
+            <div>
+                <h4>Atleta: {{refeicao.atleta}}</h4>
+                <span *ngIf="refeicao.esporte">Esporte: {{refeicao.esporte}}</span>
+            </div>
+            <img width="200px" src="{{refeicao.foto}}" alt="{{refeicao.atleta}} em {{refeicao.data  | date:'mediumDate'}}" />
+
+            <div >
                     <span class="label label-info">
                         {{refeicao.tags}}
                     </span>
-                </div>
-            </figure>
-            <p>{{refeicao.data  | date:'yMMMdjm'}}</p>
-            <a  (click)="aprovar(refeicao)" class="btn btn-success">Aprovar</a>
-            <a  (click)="reprovar(refeicao)" class="btn btn-danger">Reprovar</a>
-        </div>
+            </div>
+        </figure>
+        <p>{{refeicao.data  | date:'yMMMdjm'}}</p>
+        <a  (click)="aprovar(refeicao)" class="btn btn-success">Aprovar</a>
+        <a  (click)="reprovar(refeicao)" class="btn btn-danger">Reprovar</a>
     </div>
-
-
 </main>

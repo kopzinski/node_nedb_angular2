@@ -1,3 +1,4 @@
+"use strict";
 exports.pesoMock = {
     atleta: 'Paulo Mello',
     data: new Date(),

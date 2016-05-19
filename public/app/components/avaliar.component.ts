@@ -45,16 +45,20 @@ export class AvaliarComponent implements OnInit {
             function(element) {
                 element.data = Date.parse(element.data);
             });
+
+        this.refeicao = this.list[0];
     }
 
     aprovar(refeicao : Refeicao){
         refeicao.status = 'APROVADO';
         this.salvar(refeicao);
+        this.getRefeicoes();
     }
 
     reprovar(refeicao : Refeicao){
         refeicao.status = 'REPROVADO';
         this.salvar(refeicao);
+        this.getRefeicoes();
     }
 
     salvar(refeicao : Refeicao) {

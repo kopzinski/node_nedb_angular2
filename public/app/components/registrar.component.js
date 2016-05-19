@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12,7 +13,7 @@ var RegistrarComponent = (function () {
     function RegistrarComponent(_refeicaoService) {
         this._refeicaoService = _refeicaoService;
         this.title = 'Registrar Refeição';
-        //list: Refeicao[] = [];
+        this.list = [];
         this.refeicao = mock_refeicao_1.refeicaoMock;
         this.getRefeicao();
         this.filesToUpload = [];
@@ -81,6 +82,6 @@ var RegistrarComponent = (function () {
         })
     ], RegistrarComponent);
     return RegistrarComponent;
-})();
+}());
 exports.RegistrarComponent = RegistrarComponent;
 //# sourceMappingURL=registrar.component.js.map
