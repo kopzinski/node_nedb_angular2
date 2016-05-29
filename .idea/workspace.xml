@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b991282-b8b4-4a83-a2a3-6e046f95cdd3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/node_nedb_angular2.iml" afterPath="$PROJECT_DIR$/.idea/node_nedb_angular2.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/agua.component.js" afterPath="$PROJECT_DIR$/public/app/components/agua.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/agua.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/agua.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/app.component.js" afterPath="$PROJECT_DIR$/public/app/components/app.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/app.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/app.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/app.component.ts" afterPath="$PROJECT_DIR$/public/app/components/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/avaliar.component.js" afterPath="$PROJECT_DIR$/public/app/components/avaliar.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/avaliar.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/avaliar.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/avaliar.component.ts" afterPath="$PROJECT_DIR$/public/app/components/avaliar.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/peso.component.js" afterPath="$PROJECT_DIR$/public/app/components/peso.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/peso.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/peso.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/registrar.component.js" afterPath="$PROJECT_DIR$/public/app/components/registrar.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/registrar.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/registrar.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/registrar.component.ts" afterPath="$PROJECT_DIR$/public/app/components/registrar.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/interfaces/agua.js" afterPath="$PROJECT_DIR$/public/app/interfaces/agua.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/interfaces/peso.js" afterPath="$PROJECT_DIR$/public/app/interfaces/peso.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/interfaces/refeicao.js" afterPath="$PROJECT_DIR$/public/app/interfaces/refeicao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/mocks/mock-agua.js" afterPath="$PROJECT_DIR$/public/app/mocks/mock-agua.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/mocks/mock-agua.js.map" afterPath="$PROJECT_DIR$/public/app/mocks/mock-agua.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/mocks/mock-peso.js" afterPath="$PROJECT_DIR$/public/app/mocks/mock-peso.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/mocks/mock-peso.js.map" afterPath="$PROJECT_DIR$/public/app/mocks/mock-peso.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/mocks/mock-refeicao.js" afterPath="$PROJECT_DIR$/public/app/mocks/mock-refeicao.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/mocks/mock-refeicao.js.map" afterPath="$PROJECT_DIR$/public/app/mocks/mock-refeicao.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/agua-service.js" afterPath="$PROJECT_DIR$/public/app/services/agua-service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/agua-service.js.map" afterPath="$PROJECT_DIR$/public/app/services/agua-service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/peso-service.js" afterPath="$PROJECT_DIR$/public/app/services/peso-service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/peso-service.js.map" afterPath="$PROJECT_DIR$/public/app/services/peso-service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/refeicao.service.js" afterPath="$PROJECT_DIR$/public/app/services/refeicao.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/services/refeicao.service.js.map" afterPath="$PROJECT_DIR$/public/app/services/refeicao.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/templates/avaliar.html" afterPath="$PROJECT_DIR$/public/app/templates/avaliar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/templates/registrar.html" afterPath="$PROJECT_DIR$/public/app/templates/registrar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="node_nedb_angular2.iws" />
@@ -56,20 +24,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/app/components/app.component.ts">
+      <file leaf-file-name="registrar.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/components/registrar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="98" column="54" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-                <element signature="e#1459#1805#0" expanded="false" />
-                <marker date="1463446938000" expanded="true" signature="610:1033" placeholder="..." />
-                <marker date="1463446938000" expanded="true" signature="617:964" placeholder="..." />
-                <marker date="1463446938000" expanded="true" signature="637:964" placeholder="..." />
-                <marker date="1463446938000" expanded="true" signature="1037:1321" placeholder="..." />
-                <marker date="1463446938000" expanded="true" signature="1083:1321" placeholder="..." />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registrar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/templates/registrar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usuarioDAO.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api/usuarioDAO.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1110">
+              <caret line="74" column="33" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,7 +77,7 @@
       <file leaf-file-name="avaliar.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/components/avaliar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="825">
               <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
               <folding />
             </state>
@@ -141,9 +131,7 @@
         <option value="$PROJECT_DIR$/public/app/components/agua.component.ts" />
         <option value="$PROJECT_DIR$/public/app/services/agua-service.ts" />
         <option value="$PROJECT_DIR$/public/app/templates/agua.html" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/app/api/usuarioDAO.js" />
         <option value="$PROJECT_DIR$/public/app/interfaces/usuario.ts" />
         <option value="$PROJECT_DIR$/public/app/services/usuario.service.ts" />
         <option value="$PROJECT_DIR$/public/app/components/registrar.component.ts" />
@@ -151,6 +139,8 @@
         <option value="$PROJECT_DIR$/public/app/components/avaliar.component.ts" />
         <option value="$PROJECT_DIR$/public/app/templates/avaliar.html" />
         <option value="$PROJECT_DIR$/public/app/components/app.component.ts" />
+        <option value="$PROJECT_DIR$/app/api/usuarioDAO.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -210,8 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -364,43 +352,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_nedb_angular2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_nedb_angular2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_nedb_angular2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_nedb_angular2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches">
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -409,7 +365,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="99" />
@@ -531,15 +487,21 @@
       <updated>1458169982483</updated>
       <workItem from="1462225082474" duration="10287000" />
       <workItem from="1463444959135" duration="2677000" />
+      <workItem from="1463772959917" duration="496000" />
+      <workItem from="1463943231931" duration="1347000" />
+      <workItem from="1464103527220" duration="964000" />
+      <workItem from="1464104811314" duration="638000" />
+      <workItem from="1464382800238" duration="527000" />
+      <workItem from="1464548412717" duration="4355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12964000" />
+    <option name="totallyTimeSpent" value="21291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24140625" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -682,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -848,19 +808,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/interfaces/usuario.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -875,15 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/usuarioDAO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,9 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -901,9 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,29 +847,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/registrar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/templates/registrar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/components/avaliar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
+        <state relative-caret-position="825">
           <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
           <folding />
         </state>
@@ -947,10 +866,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/usuarioDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="33" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/components/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="98" column="54" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
+        <state relative-caret-position="273">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <element signature="e#1459#1805#0" expanded="false" />
@@ -960,6 +887,30 @@
             <marker date="1463446938000" expanded="true" signature="1037:1321" placeholder="..." />
             <marker date="1463446938000" expanded="true" signature="1083:1321" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/registrar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/templates/registrar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

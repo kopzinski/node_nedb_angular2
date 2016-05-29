@@ -19,11 +19,21 @@ app.use( express.static('./public'));
 
 app.use('/uploads', express.static('uploads'));
 
+//trying to allow CORS
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+
 //Rota exclusive para salvar as fotos recebidas...
 app.post('/v1/photos', function(req, res) {
+
     //console.log(req.body); // form fields
-    //console.log(req.files); // form files
-    res.send(req.files.uploads.name);
+    console.log(req.files); // form files
+    // res.send(req.files.uploads.name);
+    res.send(req.files.file.name);
     //res.send(req.files.filefield.name);
     //res.status(204).end()
 });
