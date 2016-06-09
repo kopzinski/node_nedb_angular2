@@ -48,7 +48,7 @@ export class RegistrarComponent implements OnInit {
             var formData: any = new FormData();
             var xhr = new XMLHttpRequest();
             for(var i = 0; i < files.length; i++) {
-                formData.append("uploads", files[i], files[i].name);
+                formData.append("file", files[i], files[i].name);
             }
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4) {

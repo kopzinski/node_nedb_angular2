@@ -41,7 +41,7 @@ usuarioDAO.login = function(req, res) {
     console.log(req.params);
     console.log('Recebido(body):');
     console.log(req.body);
-    db.findOne({type : tipos.atleta, login: req.body.login, senha : req.body.senha }, function(err, doc) {
+    db.findOne({type : { $in : [tipos.atleta, tipos.nutricionista]}, login: req.body.login, senha : req.body.senha }, function(err, doc) {
         if (err) return console.log(err);
         console.log('Retornado:');
         console.log(doc);
@@ -72,7 +72,7 @@ usuarioDAO.lista = function(req, res) {
     console.log('Recebido(body)');
     console.log(req.body);
 
-    db.find({type : tipos.atleta}).sort({data: -1}).exec(function(err, doc) {
+    db.find({ $or : [ {type : tipos.atleta},{type : tipos.nutricionista}]}).sort({data: -1}).exec(function(err, doc) {
         if (err) return console.log(err);
         res.json(doc);
         console.log('Retornado:');

@@ -3,7 +3,7 @@
     <h3 class="text-center">Avaliar Refeição</h3>
 
 
-    <div class="thumbnail text-center">
+    <div *ngIf="refeicao" class="thumbnail text-center">
         <figure >
             <div>
                 <h4>Atleta: {{refeicao.atleta}}</h4>
@@ -20,5 +20,11 @@
         <p>{{refeicao.data  | date:'yMMMdjm'}}</p>
         <a  (click)="aprovar(refeicao)" class="btn btn-success">Aprovar</a>
         <a  (click)="reprovar(refeicao)" class="btn btn-danger">Reprovar</a>
+    </div>
+
+    <div *ngIf="!refeicao" class="text-center">
+        <span class="label label-info">
+            Nenhuma avaliação pendente! :D
+        </span>
     </div>
 </main>

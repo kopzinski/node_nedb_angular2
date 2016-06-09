@@ -1,5 +1,5 @@
 var express = require('express');
-var  multer  = require('multer');
+var multer  = require('multer');
 var bodyParser = require('body-parser');
 var refeicao = require('./app/api/refeicaoDAO');
 var tag = require('./app/api/tagDAO');
@@ -13,7 +13,6 @@ var app = express();
 app.use(multer({ dest: './uploads/fotos'}));
 
 app.use(bodyParser.json());
-
 
 app.use( express.static('./public'));
 
@@ -29,13 +28,21 @@ app.use(function(req, res, next) {
 
 //Rota exclusive para salvar as fotos recebidas...
 app.post('/v1/photos', function(req, res) {
+    console.log('req.files');
+    console.log(req.files);
 
-    //console.log(req.body); // form fields
-    console.log(req.files); // form files
-    // res.send(req.files.uploads.name);
-    res.send(req.files.file.name);
-    //res.send(req.files.filefield.name);
-    //res.status(204).end()
+    if(req.files == undefined) {
+        console.log("Kop! [ERRO 01] req.files is UNDEFINED");
+    } else if (req.files.file == undefined) {
+        console.log("Kop! [ERRO 02] req.files.file is UNDEFINED");
+    } else {
+        console.log(req.files.file); // form fields
+        res.send(req.files.file.name);
+        res.status(204).end();
+    }
+
+    res.send(req.body.file);
+
 });
 
 //Rodas para inserir refeicao nova e listar todas refeicoes
@@ -102,3 +109,7 @@ app.all('\\/*', function(req, res) {
 app.listen(3000, function(app) {
     console.log('Servido escutando a porta 3000');
 });
+
+
+
+

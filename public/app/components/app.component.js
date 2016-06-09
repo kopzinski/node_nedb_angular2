@@ -47,6 +47,11 @@ var AppComponent = (function () {
             this.logado = true;
             if (usuario.type == "ATLETA") {
                 this.isAtleta = true;
+                this.goToRegistrar();
+            }
+            else {
+                this.isAtleta = false;
+                this.goToAvaliar();
             }
         }
         else {

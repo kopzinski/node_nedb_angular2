@@ -68,17 +68,6 @@ refeicaoDAO.lista = function(req, res) {
         res.json(doc);
     });
 };
-//
-//refeicaoDAO.listaPorGrupo = function(req, res) {
-//    console.log('refeicaoDAO.listaPorGrupo');
-//
-//    var grupoId = parseInt(req.params.grupoId);
-//    db.find({grupo: grupoId}, function(err, doc) {
-//        if (err) return console.log(err);
-//        res.json(doc);
-//    });
-//
-//};
 
 refeicaoDAO.remove = function(req, res) {
     console.log('refeicaoDAO.remove');

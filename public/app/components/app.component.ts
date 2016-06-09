@@ -105,6 +105,10 @@ export class AppComponent implements OnInit {
       this.logado = true;
       if(usuario.type == "ATLETA") {
         this.isAtleta = true;
+        this.goToRegistrar();
+      } else {
+        this.isAtleta = false;
+        this.goToAvaliar();
       }
     } else {
       this.errorMessage = 'Usuário ou senha inválidos';

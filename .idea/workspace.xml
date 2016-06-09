@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b991282-b8b4-4a83-a2a3-6e046f95cdd3" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/1130db1235953a362f5ff022e3c6aa8b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/13656469a28fbbd98ca54a6819bccc8f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/17bb32f9663710f5afe3ce46afe700ed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/3e9d4bf12a5f00ea0cafa81810add29e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/61ba997ad0f5729b31b189860fa85086.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/8aa0ecb3fa4fc026a34027ef15900eb4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/9588dad49afe289591e3d350bf824a92.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/9ad5157c6525e663ea7a81294caa3fa8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/dd1a2f973309c0c4779fd1428a1078a5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/e1ad3d9ffd04f2defba6a31481f046ad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/e791ab86fd8c27b6f793f7d63765e0d3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ed990c792a181b322d5acd2c5bd96b36.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ef12e706168e96f90f32b7a8c03c6f31.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/f1a740b3bda514e03bc3abf2679b3c8f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/f9858040a272e78a4c850f6e0dfa6eaf.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/refeicaoDAO.js" afterPath="$PROJECT_DIR$/app/api/refeicaoDAO.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api/usuarioDAO.js" afterPath="$PROJECT_DIR$/app/api/usuarioDAO.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/app.component.js" afterPath="$PROJECT_DIR$/public/app/components/app.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/app.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/app.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/app.component.ts" afterPath="$PROJECT_DIR$/public/app/components/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/registrar.component.js" afterPath="$PROJECT_DIR$/public/app/components/registrar.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/registrar.component.js.map" afterPath="$PROJECT_DIR$/public/app/components/registrar.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/components/registrar.component.ts" afterPath="$PROJECT_DIR$/public/app/components/registrar.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/templates/avaliar.html" afterPath="$PROJECT_DIR$/public/app/templates/avaliar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="node_nedb_angular2.iws" />
@@ -27,18 +51,38 @@
       <file leaf-file-name="registrar.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/components/registrar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+            <state relative-caret-position="138">
+              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="refeicao.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/services/refeicao.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="refeicao.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/app/interfaces/refeicao.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="240">
+              <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -47,18 +91,18 @@
       <file leaf-file-name="registrar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/templates/registrar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="195">
+              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usuarioDAO.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/api/usuarioDAO.js">
+      <file leaf-file-name="refeicaoDAO.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/api/refeicaoDAO.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="33" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="33" />
+            <state relative-caret-position="198">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,8 +111,8 @@
       <file leaf-file-name="avaliar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/templates/avaliar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -77,8 +121,8 @@
       <file leaf-file-name="avaliar.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/app/components/avaliar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+            <state relative-caret-position="393">
+              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -112,7 +156,6 @@
         <option value="$PROJECT_DIR$/public/app/principal.html" />
         <option value="$PROJECT_DIR$/public/app/app.component.ts" />
         <option value="$PROJECT_DIR$/public/app/agua.component.ts" />
-        <option value="$PROJECT_DIR$/app/api/refeicaoDAO.js" />
         <option value="$PROJECT_DIR$/public/app/main.ts" />
         <option value="$PROJECT_DIR$/public/app/services/refeicao.service.ts" />
         <option value="$PROJECT_DIR$/public/app/mocks/mock-refeicao.ts" />
@@ -134,13 +177,14 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/app/interfaces/usuario.ts" />
         <option value="$PROJECT_DIR$/public/app/services/usuario.service.ts" />
-        <option value="$PROJECT_DIR$/public/app/components/registrar.component.ts" />
         <option value="$PROJECT_DIR$/public/app/templates/registrar.html" />
         <option value="$PROJECT_DIR$/public/app/components/avaliar.component.ts" />
+        <option value="$PROJECT_DIR$/app/api/usuarioDAO.js" />
+        <option value="$PROJECT_DIR$/public/app/components/registrar.component.ts" />
         <option value="$PROJECT_DIR$/public/app/templates/avaliar.html" />
         <option value="$PROJECT_DIR$/public/app/components/app.component.ts" />
-        <option value="$PROJECT_DIR$/app/api/usuarioDAO.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/app/api/refeicaoDAO.js" />
       </list>
     </option>
   </component>
@@ -200,6 +244,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,28 +359,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_nedb_angular2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_nedb_angular2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -352,12 +377,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_nedb_angular2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_nedb_angular2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_nedb_angular2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_nedb_angular2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches">
-        <subPane />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -493,15 +547,18 @@
       <workItem from="1464104811314" duration="638000" />
       <workItem from="1464382800238" duration="527000" />
       <workItem from="1464548412717" duration="4355000" />
+      <workItem from="1464740008226" duration="1798000" />
+      <workItem from="1464906558868" duration="186000" />
+      <workItem from="1465265959025" duration="4070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21291000" />
+    <option name="totallyTimeSpent" value="27345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24140625" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -554,13 +611,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/main.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="75" selection-start-line="0" selection-start-column="75" selection-end-line="0" selection-end-column="75" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/router.js">
@@ -682,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/refeicaoDAO.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -794,20 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/services/refeicao.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/interfaces/refeicao.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/interfaces/usuario.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -850,66 +886,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/avaliar.component.ts">
+    <entry file="file://$PROJECT_DIR$/public/app/components/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/templates/avaliar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="393">
+          <caret line="110" column="27" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
+          <folding>
+            <marker date="1465266755000" expanded="true" signature="609:1005" placeholder="..." />
+            <marker date="1465266755000" expanded="true" signature="637:964" placeholder="..." />
+            <marker date="1465266755000" expanded="true" signature="1031:1328" placeholder="..." />
+            <marker date="1465266755000" expanded="true" signature="1083:1321" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api/usuarioDAO.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="33" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <element signature="e#1459#1805#0" expanded="false" />
-            <marker date="1463446938000" expanded="true" signature="610:1033" placeholder="..." />
-            <marker date="1463446938000" expanded="true" signature="617:964" placeholder="..." />
-            <marker date="1463446938000" expanded="true" signature="637:964" placeholder="..." />
-            <marker date="1463446938000" expanded="true" signature="1037:1321" placeholder="..." />
-            <marker date="1463446938000" expanded="true" signature="1083:1321" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/components/registrar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/templates/registrar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="408">
+          <caret line="43" column="90" selection-start-line="43" selection-start-column="85" selection-end-line="43" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        <state relative-caret-position="240">
+          <caret line="59" column="6" selection-start-line="59" selection-start-column="6" selection-end-line="59" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/interfaces/refeicao.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/templates/registrar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/templates/avaliar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/registrar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/components/avaliar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/services/refeicao.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/refeicaoDAO.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
